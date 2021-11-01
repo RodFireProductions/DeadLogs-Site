@@ -56,6 +56,7 @@ document.documentElement.setAttribute("lang", lang);
 let navv = document.getElementById('nav');
 navv.innerHTML += '<a href="' + path + navi.home[1] +'">' + navi.home[0] + '</a>';
 navv.innerHTML += '<a href="' + path + navi.about[1] +'">' + navi.about[0] + '</a>';
+navv.innerHTML += '<a href="' + path + navi.aboutt[1] +'">' + navi.aboutt[0] + '</a>';
 navv.innerHTML += '<a href="' + path + navi.archive[1] +'">' + navi.archive[0] + '</a>';
 
 // Footer
@@ -91,14 +92,19 @@ if (recent != null) {
 
 // Archive posts
 let archiveList = document.getElementById('archivePage');
-if (archiveList != null) {
+function arc() {
     a = postArchive.reverse()
     s = postArchiveDates.reverse()
     d = postArchiveNames.reverse()
     let w;
+    let dog = "";
     for (w = 0; w < a.length; w++) {
-      archiveList.innerHTML += '<a class="changePost" href="'+ path + "/" + a[w] +'">'+ s[w]+ " -- " +d[w] +'</a><br>';
+      dog += '<li><a class="changePost" href="'+ path + "/" + a[w] +'">'+ d[w] +'</a></li><br>';
     }
+    return dog
+}
+if (archiveList != null) {
+    archiveList.innerHTML += '<ul>' + arc() + '</ul>';
 }
 
 // About page
@@ -158,10 +164,11 @@ function hate(x){
 
     return dog
 }
+
 if (examples != null) {
     let t;
     for (t = 0; t < examplesArchive.length; t++) {
-        exampless('<div class="examples"><a target="_blank" href="'+ examplesArchive[t] +'">' + examplesNames[t] + ' (live demo)</a> | <a target="_blank" href="'+ examplesGihub.stone +'">GitHub</a><br>'+ examplesDescription[t] + hate(examplesNames[t]) +'</div>');
+        exampless('<div class="examples"><a target="_blank" href="'+ examplesArchive[t] +'">' + examplesNames[t] + ' (live demo)</a> | <a target="_blank" href="'+ examplesGithub[t] +'">GitHub</a><br>'+ examplesDescription[t] + hate(examplesNames[t]) +'</div>');
     }
 }
 

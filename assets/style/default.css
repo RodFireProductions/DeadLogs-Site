@@ -9,19 +9,20 @@
 */
 
 :root {
-    --accent-color  : yellow;
+    --accent-color  : #290a10;
+    --please        : #544234; /* #0d0311 */
 
-    --text-color    : #0d0311; /* Main text color */
+    --text-color    : var(--please); /* Main text color */
     --back-image    : url('../images/mushrooms.jpg'); /* Body background image */
     --back-overlay  : url('../images/dot.png'); /* Background image overlay image.
         If you want there to be no overlay, then set this image to '../images/trans.png'.
     */
-    --back-color    : #ffffff; /* Background color of main area */
-    --color-back    : #0d0311; /* #decfe9 */
+    --back-color    : #f0ecdf; /* Background color of main area */
+    --color-back    : var(--please); /* #decfe9 */
 
     --nav-color     : #32174d00; /* Navigation background color */
     --nav-txt-color : var(--accent-color); /* Navigation text color */
-    --nav-btn-color : #0d0311;
+    --nav-btn-color : var(--please);
 
     --border-color  : #222; /* Color of border */
     --border-style  : none; /* The style of the border */
@@ -66,7 +67,7 @@ hr {
 }
 
 code {
-    background-color: black;
+    background-color: #46261a;
     padding-top: 5px;
     padding-left: 5px;
     padding-right: 5px
@@ -74,7 +75,7 @@ code {
 }
 
 mark {
-    background-color: #ffffff22;
+    background-color: #e0b59344;
     color: white;
     border-radius: 5px;
 }
@@ -86,6 +87,7 @@ mark {
     display: grid;
     grid-auto-flow: column;
     padding: 5px;
+    margin-top: 0;
 }
 
 #nav a {
@@ -120,13 +122,17 @@ mark {
 }
 .changePost:hover { text-decoration: underline; color: var(--nav-txt-color); }
 
-#archivePage, #recentPosts {
+#archivePage {
+    line-height: 1.3em;
+    margin: 10px auto;
+}
+#recentPosts {
     line-height: 1.3em;
     margin: 10px auto;
     text-align: center;
 }
 #archivePage a, #recentPosts a {
-    color: #ccc;
+    color: #e0b593;
     text-decoration: underline;
 }
 #archivePage a:hover, #recentPosts a:hover {
@@ -168,8 +174,8 @@ footer {
 
 #postTitle, #blogTitle {
     font-family: var(--font-title);
-    font-size: 3em;
     letter-spacing: 0px;
+    color: #1c0c06;
 
     line-height: 1.1;
     /*
@@ -183,7 +189,7 @@ footer {
 
 .heading {
     text-align: center;
-    height: 3em;
+    margin-bottom: 0;
 }
 
 .postcontent {
@@ -195,7 +201,7 @@ footer {
     min-height: 20px;
     color: #fff;
 
-    background-color: #0d0311;
+    background-color: var(--please);
 
     padding: 30px;
 
@@ -211,10 +217,10 @@ footer {
 }
 
 .postcontent a {
-    color: #ccc;
+    color: #e0b593;
 }
 .postcontent a:hover { color: var(--accent-color); }
-.postcontent h3 { color: #ccc; }
+.postcontent h3 { color: #fff; }
 
 #examplesPage {
     display: grid;

@@ -41,7 +41,8 @@ let author = {
 let navi = {
     home: ['home','/index.html'],
     about: ['examples','/examples.html'],
-    archive: ['get started','/tutorial.html']
+    archive: ['get started','/tutorial.html'],
+    aboutt: ['about', '/about.html']
 }
 
 // --------------------------- # # # # #
@@ -58,13 +59,13 @@ let navi = {
     together and in chronological order.
 */
 let postArchive = [
-    "./post/template.html"
+    "./post/navigation_bar.html"
 ];
 let postArchiveNames = [
-    "template"
+    "How do you add more links to the navigation bar?"
 ];
 let postArchiveDates = [
-    //"25 Oct 2021"
+    "1 Nov 2021"
 ];
 
 let examplesArchive = [
@@ -84,9 +85,9 @@ let examplesPictures = {
     absent: ["./assets/images/post/absent_1.png", "./assets/images/post/absent_2.png", "./assets/images/post/absent_3.png"]
 }
 
-let examplesGihub = {
-    stone: ["https://github.com/RodFireProductions/DeadJournals/tree/main/examples/stone_news"],
-    absent: ["https://github.com/RodFireProductions/DeadJournals/tree/main/examples/absent"]
-}
+let examplesGithub = [
+    "https://github.com/RodFireProductions/DeadJournals-Website/tree/main/examples/stone_news",
+    "https://github.com/RodFireProductions/DeadJournals-Website/tree/main/examples/absent"
+]
 
 // --------------------------- # # # # #
