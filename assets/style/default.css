@@ -8,38 +8,34 @@
     to your liking.
 */
 
-/* The fonts used for this theme. Feel free to change theme. */
-@import url('https://fonts.googleapis.com/css2?family=IM+Fell+English&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Playball&display=swap');
-
 :root {
     --accent-color  : yellow;
 
-    --text-color    : #000; /* Main text color */
+    --text-color    : #0d0311; /* Main text color */
     --back-image    : url('../images/mushrooms.jpg'); /* Body background image */
     --back-overlay  : url('../images/dot.png'); /* Background image overlay image.
         If you want there to be no overlay, then set this image to '../images/trans.png'.
     */
     --back-color    : #ffffff; /* Background color of main area */
-    --color-back    : #000; /* #decfe9 */
+    --color-back    : #0d0311; /* #decfe9 */
 
     --nav-color     : #32174d00; /* Navigation background color */
     --nav-txt-color : var(--accent-color); /* Navigation text color */
-    --nav-btn-color : #000;
+    --nav-btn-color : #0d0311;
 
     --border-color  : #222; /* Color of border */
     --border-style  : none; /* The style of the border */
     --border-width  : 10px; /* The border's width */
 
-    --font-main     : 'IM Fell English', serif; /* The font used for almost everything */
-    --font-title    : 'Playball', serif; /* The font used for page titles */
+    --font-main     : sans-serif; /* The font used for almost everything */
+    --font-title    : serif; /* The font used for page titles */
     --text-indent   : 2em; /* The width of paragraph indents. Just put `0px` if you don't want any. */
 }
 
 html { scrollbar-color: #eee #222; }
 
-::selection { background: #000; color: #bbb; }
-::-moz-selection { background: #000; color: #bbb; }
+::selection { background: #333; color: #bbb; }
+::-moz-selection { background: #333; color: #bbb; }
 
 ::-webkit-scrollbar-track { background-color: #222; }
 ::-webkit-scrollbar-thumb { background-color: #eee; }
@@ -71,8 +67,16 @@ hr {
 
 code {
     background-color: black;
-    padding: 5px;
+    padding-top: 5px;
+    padding-left: 5px;
+    padding-right: 5px
     color: var(--accent-color);
+}
+
+mark {
+    background-color: #ffffff22;
+    color: white;
+    border-radius: 5px;
 }
 
 #nav {
@@ -191,9 +195,11 @@ footer {
     min-height: 20px;
     color: #fff;
 
-    background-color: #000000ee;
+    background-color: #0d0311;
 
     padding: 30px;
+
+    line-height: 1.3;
 
     /*
     text-shadow:
