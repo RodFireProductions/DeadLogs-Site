@@ -13,9 +13,9 @@
 
 //=// --- Basic Configs --- //=// [1]
 
-let siteName = "Stone News";
+let siteName = "Absent";
 let lang = "en"; // The language of your site. Example, en = english, fr = français (french), etc.
-let siteUrl = "https://deadjournals.deadinsideartist.art/examples/stone_news/index.html"; // You can just put the url of your site here, whether that be a subdomain or custom
+let siteUrl = "https://deadjournals.deadinsideartist.art/examples/absent/index.html"; // You can just put the url of your site here, whether that be a subdomain or custom
 
 // Feel free to leave one of these values as 'null' if you don't wish to use them.
 let socials = {
@@ -23,18 +23,18 @@ let socials = {
     // Heck, even a rick roll if you're feeling like it.
     one: ['My Blog', siteUrl], // Example: ['Twitter', 'https://twitter.com/(your account name)']
     two: ['DeadJournals', 'https://deadjournals.deadinsideartist.art'],
-    three: ['GitHub', 'https://github.com/RodFireProductions/DeadJournals/tree/main/examples/stone_news']
+    three: ['GitHub', 'https://github.com/RodFireProductions/DeadJournals/tree/main/examples/absent']
 }
 
 // Feel free to leave one of these values as 'null' if you don't wish to use them.
 let author = {
-    name: "Marrow Gradient",
-    title: 'A rock on the web', // A job title or personal title, what ever defines you <3
+    name: "White Void",
+    title: 'The Purest Abyss', // A job title or personal title, what ever defines you <3
     picture: "./assets/images/author.png", // This is the url of the author picture, can be local or a link. Square or almost square is recommended
-    pronouns: 'fae/faer', // Examples: he/him, she/her, they/them, ze/zir, etc. Resource: https://en.pronouns.page/
-    extra: ['aroace','donut stone', 'mixed'], // Your orientation, ethinicty, etc? If none, then set this to `null`
+    pronouns: 'ze/zir', // Examples: he/him, she/her, they/them, ze/zir, etc. Resource: https://en.pronouns.page/
+    extra: ['demiace', 'swirling'], // Your orientation, ethinicty, etc? If none, then set this to `null`
 
-    line: "Pebbles are cute!" // A quote? A goofy phrase? Your own personal motto? Be creative!
+    line: '"<b>BE NOT AFRAID</b>" - Biblically Accurate Angels' // A quote? A goofy phrase? Your own personal motto? Be creative!
 }
 
 let navi = {

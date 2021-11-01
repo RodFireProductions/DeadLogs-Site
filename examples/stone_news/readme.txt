@@ -1,5 +1,5 @@
 ---------------------------
-## Stone News (the default theme) ##
+## Stone News (the first theme) ##
 ---------------------------
 
     Welcome to the Stone News example blog.

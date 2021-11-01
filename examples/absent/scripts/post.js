@@ -59,7 +59,7 @@ navv.innerHTML += '<a href="' + path + navi.about[1] +'">' + navi.about[0] + '</
 navv.innerHTML += '<a href="' + path + navi.archive[1] +'">' + navi.archive[0] + '</a>';
 
 // Footer
-let foot = '<div> Built using <a target="_blank" href="https://deadjournals.deadinsideartist.art/">DeadJournals</a> <br>&#169; Copyright ' + year.getFullYear() + ' ' + author.name + ' - All Rights Reserved</div>';
+let foot = '<div> Built using <a target="_blank" href="https://deadjournals.deadinsideartist.art//">DeadJournals</a> <br>&#169; Copyright ' + year.getFullYear() + ' ' + author.name + ' - All Rights Reserved</div>';
 document.getElementById('footer').innerHTML = foot;
 
 // Post navigation
@@ -82,8 +82,14 @@ if (recent != null) {
     d = postArchiveNames.reverse()
     recent.innerHTML += '<div>Recent posts</div>';
     let r;
-    for (r = 0; r < 3; r++) {
-        recent.innerHTML += '<a class="changePost" href="'+ path + "/" + a[r] +'">'+ s[r]+ " -- " +d[r] +'</a><br>';
+    if (a.length >= 3) {
+        for (r = 0; r < 3; r++) {
+            recent.innerHTML += '<a class="changePost" href="'+ path + "/" + a[r] +'">'+ s[r]+ " -- " +d[r] +'</a><br>';
+        }
+    } else {
+        for (r = 0; r < a.length; r++) {
+            recent.innerHTML += '<a class="changePost" href="'+ path + "/" + a[r] +'">'+ s[r]+ " -- " +d[r] +'</a><br>';
+        }
     }
     recent.innerHTML += '<a class="changePost" href="'+ path + "/" + navi.archive[1] +'">'+ " See all "+'</a><br>';
 }
@@ -108,7 +114,7 @@ function aboutt(x){
 }
 if (aboutAuthor != null) {
     if ( author.name != null) {
-        aboutt('<div style="font-size: 2em;">' + author.name + '</div>');
+        aboutt('<div style="font-size: 1.5em;">' + author.name + '</div>');
     } if ( author.title != null ) {
         aboutt('<div><i>' + author.title + '</i></div>');
     } if ( author.picture != null ) {
@@ -116,7 +122,7 @@ if (aboutAuthor != null) {
     } if ( author.pronouns != null) {
         aboutt('<div>' + author.pronouns + '</div>');
     } if ( author.extra != null ) {
-        aboutt('<div>')
+        aboutt('<div>');
         let e;
         for (e = 0; e < author.extra.length; e++) {
             if (e === 0) {
@@ -125,57 +131,24 @@ if (aboutAuthor != null) {
                 aboutt(" | " +author.extra[e]);
             }
         }
-        aboutt('</div>')
+        aboutt('</div>');
+    } if ( socials != null) {
+        aboutt('<div>');
+            if (socials.one != null) {
+                aboutt('<a href="'+ socials.one[1] +'">'+ socials.one[0] +'</a>');
+            } if (socials.two != null) {
+                aboutt(' | <a href="'+ socials.two[1] +'">'+ socials.two[0] +'</a>');
+            } if (socials.three != null) {
+                aboutt(' | <a href="'+ socials.three[1] +'">'+ socials.three[0] +'</a>');
+            }
+        aboutt('</div>');
     } if ( author.line != null) {
         aboutt('<div style="color: var(--accent-color); margin-top: 5px;">'+ author.line +'</div>');
     }
 }
 
-// Examples page
-let examples = document.getElementById('examplesPage');
-function exampless(x){
-    examples.innerHTML += x;
-}
-function hate(x){
-    let dog = "";
-    if (x === 'Stone News') {
-        let p;
-        dog += '<div class="expics">';
-        for (p = 0; p < 3; p++) {
-            dog += '<img src="'+ examplesPictures.stone[p] +'" class="expicss">';
-        }
-        dog += '</div>';
-    }
-
-    if (x === 'Absent') {
-        let p;
-        dog += '<div class="expics">';
-        for (p = 0; p < 3; p++) {
-            dog += '<img src="'+ examplesPictures.absent[p] +'" class="expicss">';
-        }
-        dog += '</div>';
-    }
-
-    return dog
-}
-if (examples != null) {
-    let t;
-    for (t = 0; t < examplesArchive.length; t++) {
-        exampless('<div class="examples"><a target="_blank" href="'+ examplesArchive[t] +'">' + examplesNames[t] + ' (live demo)</a> | <a target="_blank" href="'+ examplesGihub.stone +'">GitHub</a><br>'+ examplesDescription[t] + hate(examplesNames[t]) +'</div>');
-    }
-}
-
-// Themes avaliable
-
-let avaliable = document.getElementById('theme_options');
-if (avaliable != null) {
-    let y;
-    for (y = 0; y <examplesArchive.length; y++) {
-        if (y === 0 ) {
-            avaliable.innerHTML += '<a href="'+ examplesArchive[y] +'" target="_blank">'+ examplesNames[y] +'</a>'
-
-        } else {
-            avaliable.innerHTML += ', <a href="'+ examplesArchive[y] +'" target="_blank">'+ examplesNames[y] +'</a>'
-        }
-    }
+// Post dates
+let postDate = document.getElementById('postDate');
+if ( postDate != null) {
+    postDate.innerHTML = postArchiveDates[index];
 }

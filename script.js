@@ -68,21 +68,25 @@ let postArchiveDates = [
 ];
 
 let examplesArchive = [
-    "./examples/stone_news/index.html"
+    "./examples/stone_news/index.html",
+    "./examples/absent/index.html"
 ];
 let examplesNames = [
-    "Stone News"
+    "Stone News",
+    "Absent"
 ];
 let examplesDescription = [
-    "An old timey, stoney newspaper! What will you journal on? What stories will you share?"
+    "An old timey, stoney newspaper! What will you journal on? What stories will you share?",
+    "Color and much styling is absent here."
 ];
 let examplesPictures = {
-    stone: ["./assets/images/post/stone_1.png", "./assets/images/post/stone_2.png", "./assets/images/post/stone_3.png"]
+    stone: ["./assets/images/post/stone_1.png", "./assets/images/post/stone_2.png", "./assets/images/post/stone_3.png"],
+    absent: ["./assets/images/post/absent_1.png", "./assets/images/post/absent_2.png", "./assets/images/post/absent_3.png"]
 }
 
 let examplesGihub = {
-    stone: ["https://github.com/RodFireProductions/DeadJournals/tree/main/examples/stone_news"]
+    stone: ["https://github.com/RodFireProductions/DeadJournals/tree/main/examples/stone_news"],
+    absent: ["https://github.com/RodFireProductions/DeadJournals/tree/main/examples/absent"]
 }
-
 
 // --------------------------- # # # # #
