@@ -15,9 +15,6 @@
 
     --text-color    : var(--please); /* Main text color */
     --back-image    : url('../images/mushrooms.jpg'); /* Body background image */
-    --back-overlay  : url('../images/dot.png'); /* Background image overlay image.
-        If you want there to be no overlay, then set this image to '../images/trans.png'.
-    */
     --back-color    : #f0ecdf; /* Background color of main area */
     --color-back    : var(--please); /* #decfe9 */
 
@@ -45,7 +42,7 @@ html { scrollbar-color: #eee #222; }
 /*////////////////////////////////////////////////////////////////////////////*/
 /* CSS that you *shouldn't* be messing with unless you know what you're doing */
 body {
-    background: var(--back-overlay), var(--back-image), black;
+    background: var(--back-image), black;
     background-size: cover;
 }
 
