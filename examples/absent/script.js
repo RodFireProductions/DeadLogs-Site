@@ -18,13 +18,13 @@ let lang = "en"; // The language of your site. Example, en = english, fr = fran√
 let siteUrl = "https://deadjournals.deadinsideartist.art/examples/absent/index.html"; // You can just put the url of your site here, whether that be a subdomain or custom
 
 // Feel free to leave one of these values as 'null' if you don't wish to use them.
-let socials = {
-    // Set up to 3 links to go in your about page. It could be to your website or socials
+let socials = [
+    // Set up links to go in your about page. It could be to your website or socials
     // Heck, even a rick roll if you're feeling like it.
-    one: ['My Blog', siteUrl], // Example: ['Twitter', 'https://twitter.com/(your account name)']
-    two: ['DeadJournals', 'https://deadjournals.deadinsideartist.art'],
-    three: ['GitHub', 'https://github.com/RodFireProductions/DeadJournals/tree/main/examples/absent']
-}
+    ['My Blog', siteUrl], // Example: ['Twitter', 'https://twitter.com/(your account name)']
+    ['DeadJournals', 'https://deadjournals.deadinsideartist.art'],
+    ['GitHub', 'https://github.com/RodFireProductions/DeadJournals/tree/main/examples/absent']
+]
 
 // Feel free to leave one of these values as 'null' if you don't wish to use them.
 let author = {
@@ -37,11 +37,11 @@ let author = {
     line: '"<b>BE NOT AFRAID</b>" - Biblically Accurate Angels' // A quote? A goofy phrase? Your own personal motto? Be creative!
 }
 
-let navi = {
-    home: ['home','/index.html'],
-    about: ['about','/about.html'],
-    archive: ['archive','/archive.html']
-}
+let navi = [
+    ['home','/index.html'],
+    ['about','/about.html'],
+    ['archive','/archive.html']
+]
 
 // --------------------------- # # # # #
 // // / / / // / / / / // / / / / / / / /
@@ -52,25 +52,14 @@ let navi = {
     each post.
 
     **ANYTIME** you add a new post to your site/blog, please add the file
-    location to the *bottom* of `postArchive` and the post title to the
-    *bottom* of `postArchiveNames`. This will keep the posts linked
+    location to the *bottom* of `postArchive`. This will keep the posts linked
     together and in chronological order.
 */
+
 let postArchive = [
-    "post/oct_25_2021_example.html",
-    "post/oct_26_2021_example2.html",
-    "post/oct_26_2021_example3.html"
-];
-let postArchiveNames = [
-    "Example Polar Post",
-    "Example Yet Post",
-    "Example Dog Post"
-];
-let postArchiveDates = [
-    // You can format these however you like, but I'd make sure that they all share the same format
-    "October 25, 2021 | 2:36pm",
-    "October 26, 2021 | 11:07am",
-    "October 26, 2021 | 11:52am"
-];
+    ['Example Polar Post', 'October 25, 2021 | 2:36pm', 'post/oct_25_2021_example.html'],
+    ['Example Yet Post', 'October 26, 2021 | 11:07am', 'post/oct_26_2021_example2.html'],
+    ['Example Dog Post', 'October 26, 2021 | 11:52am', 'post/oct_26_2021_example3.html']
+]
 
 // --------------------------- # # # # #
