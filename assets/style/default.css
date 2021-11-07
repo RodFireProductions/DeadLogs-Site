@@ -9,18 +9,18 @@
 */
 
 :root {
-    --accent-color  : #290a10;
-    --please        : #544234; /* #0d0311 */
-    --please2       : #fff;
+    --accent-color  : #28091f;
+    --please        : #543436; /* #0d0311 */
+    --please2       : #f7f2f9;
 
     --text-color    : var(--please); /* Main text color */
     --back-image    : url('../images/mushrooms.jpg'); /* Body background image */
-    --back-color    : #f0ecdf; /* Background color of main area */
+    --back-color    : #f1e8f4; /* Background color of main area #866991 */
     --color-back    : var(--please); /* #decfe9 */
 
     --nav-color     : #32174d00; /* Navigation background color */
-    --nav-txt-color : var(--accent-color); /* Navigation text color */
-    --nav-btn-color : var(--please);
+    --nav-txt-color : white; /* Navigation text color */
+    --nav-btn-color : #1c050b;
 
     --border-color  : #222; /* Color of border */
     --border-style  : none; /* The style of the border */
@@ -77,8 +77,8 @@ code {
 }
 
 mark {
-    background-color: #e0b59377;
-    color: #544234;
+    background-color: #ae94e077;
+    color: #543436;
     border-radius: 0px;
 }
 
@@ -177,7 +177,7 @@ footer {
 #postTitle, #blogTitle {
     font-family: var(--font-title);
     letter-spacing: 0px;
-    color: #1c0c06;
+    color: #1c050b;
 
     line-height: 1.1;
     /*
@@ -209,7 +209,7 @@ footer {
 
     line-height: 1.3;
 
-    border-radius: 20px;
+    border-radius: 0px;
 }
 
 .postcontent a {
