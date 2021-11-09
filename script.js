@@ -39,10 +39,10 @@ let author = {
 }
 
 let navi = {
-    home: ['home','/index.html'],
-    about: ['examples','/examples.html'],
-    archive: ['get started','/tutorial.html'],
-    aboutt: ['about', '/about.html']
+    home: ['home','/index'],
+    about: ['examples','/examples'],
+    archive: ['get started','/tutorial'],
+    aboutt: ['about', '/about']
 }
 
 // --------------------------- # # # # #
@@ -59,7 +59,7 @@ let navi = {
     together and in chronological order.
 */
 let postArchive = [
-    "./post/navigation_bar.html"
+    "./post/navigation_bar"
 ];
 let postArchiveNames = [
     "How do you add more links to the navigation bar?"
@@ -69,8 +69,8 @@ let postArchiveDates = [
 ];
 
 let examplesArchive = [
-    "./examples/stone_news/index.html",
-    "./examples/absent/index.html"
+    "./examples/stone_news/index",
+    "./examples/absent/index"
 ];
 let examplesNames = [
     "Stone News",
