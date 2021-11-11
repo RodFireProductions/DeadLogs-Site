@@ -6,7 +6,6 @@
 
 // Feel free to change the default settings! ♡
 let credit = {
-	emoji: "💀♡",
 	name: siteName,
     author: author.name,
 	description: [
@@ -15,8 +14,6 @@ let credit = {
         "♡ POC lives will always matter! ♡"
     ]
 }
-
-// I wouldn't recommend touching this!
 
 if (credit != null){
 	console.group("💀♡ Lookin' under the hood? ♡💀")
@@ -27,7 +24,6 @@ if (credit != null){
     for (z = 0; z < credit.description.length; z++) {
 		console.log(credit.description[z])
     }
-
 
 	console.groupEnd()
 }

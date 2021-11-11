@@ -54,10 +54,10 @@ document.documentElement.setAttribute("lang", lang);
 
 // Site navigation
 let navv = document.getElementById('nav');
-navv.innerHTML += '<a href="' + path + navi.home[1] +'">' + navi.home[0] + '</a>';
-navv.innerHTML += '<a href="' + path + navi.about[1] +'">' + navi.about[0] + '</a>';
-navv.innerHTML += '<a href="' + path + navi.aboutt[1] +'">' + navi.aboutt[0] + '</a>';
-navv.innerHTML += '<a href="' + path + navi.archive[1] +'">' + navi.archive[0] + '</a>';
+let d;
+for (d = 0; d < navi.length; d++) {
+    navv.innerHTML += '<a href="' + path + navi[d][1] +'">' + navi[d][0] + '</a>';
+}
 
 // Footer
 let foot = '<div> Built using <a target="_blank" href="https://deadjournals.deadinsideartist.art/">DeadJournals</a> <br>&#169; Copyright ' + year.getFullYear() + ' ' + author.name + ' - All Rights Reserved</div>';

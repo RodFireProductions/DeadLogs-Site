@@ -38,12 +38,12 @@ let author = {
     line: "Mushrooms are cute!" // A quote? A goofy phrase? Your own personal motto? Be creative!
 }
 
-let navi = {
-    home: ['home','/index'],
-    about: ['examples','/examples'],
-    archive: ['get started','/tutorial'],
-    aboutt: ['about', '/about']
-}
+let navi = [
+    ['home','/index'],
+    ['examples','/examples'],
+    ['get started','/tutorial'],
+    ['about', '/about']
+]
 
 // --------------------------- # # # # #
 // // / / / // / / / / // / / / / / / / /
