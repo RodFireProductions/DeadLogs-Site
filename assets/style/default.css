@@ -15,7 +15,7 @@
 
     --text-color    : var(--please); /* Main text color */
     --back-image    : url('../images/mushrooms.jpg'); /* Body background image */
-    --back-color    : #f1e8f4; /* Background color of main area #866991 */
+    --back-color    : var(--please2); /* Background color of main area #f1e8f4 */
     --color-back    : var(--please); /* #decfe9 */
 
     --nav-color     : #32174d00; /* Navigation background color */
@@ -169,7 +169,7 @@ footer {
     min-height: 100px;
     margin: 25px auto;
 
-    border-radius: 50px;
+    border-radius: 0px;
 
     padding: 10px;
 }

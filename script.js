@@ -62,10 +62,10 @@ let postArchive = [
     "./post/navigation_bar"
 ];
 let postArchiveNames = [
-    "How do you add more links to the navigation bar?"
+    "How do you add/subtract links from the navigation bar?"
 ];
 let postArchiveDates = [
-    "1 Nov 2021"
+    "11 Nov 2021"
 ];
 
 let examplesArchive = [
