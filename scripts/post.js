@@ -144,31 +144,20 @@ function exampless(x){
 }
 function hate(x){
     let dog = "";
-    if (x === 'Stone News') {
-        let p;
-        dog += '<div class="expics">';
-        for (p = 0; p < 3; p++) {
-            dog += '<img src="'+ examplesPictures.stone[p] +'" class="expicss">';
+    if (examplesPictures[x] != null) {
+        dog += '<div class="expics">'
+        for (p = 0; p < examplesPictures[x].length; p++) {
+            dog += '<img src="'+ examplesPictures[x][p] +'" class="expicss">';
         }
-        dog += '</div>';
+        dog += '</div>'
     }
-
-    if (x === 'Absent') {
-        let p;
-        dog += '<div class="expics">';
-        for (p = 0; p < 3; p++) {
-            dog += '<img src="'+ examplesPictures.absent[p] +'" class="expicss">';
-        }
-        dog += '</div>';
-    }
-
     return dog
 }
 
 if (examples != null) {
     let t;
     for (t = 0; t < examplesArchive.length; t++) {
-        exampless('<div class="examples"><a target="_blank" href="'+ examplesArchive[t] +'">' + examplesNames[t] + ' (live demo)</a> | <a target="_blank" href="'+ examplesGithub[t] +'">GitHub</a><br>'+ examplesDescription[t] + hate(examplesNames[t]) +'</div>');
+        exampless('<div class="examples"><a target="_blank" href="'+ examplesArchive[t] +'">' + examplesNames[t] + ' (live demo)</a> | <a target="_blank" href="'+ examplesGithub[t] +'">GitHub</a><br>'+ examplesDescription[t] + hate(t) +'</div>');
     }
 }
 
