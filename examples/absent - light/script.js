@@ -15,7 +15,7 @@
 
 let siteName = "Absent";
 let lang = "en"; // The language of your site. Example, en = english, fr = français (french), etc.
-let siteUrl = "https://deadjournals.deadinsideartist.art/examples/absent/index.html"; // You can just put the url of your site here, whether that be a subdomain or custom
+let siteUrl = "https://deadjournals.deadinsideartist.art/examples/absent%20-%20light/index"; // You can just put the url of your site here, whether that be a subdomain or custom
 
 // Feel free to leave one of these values as 'null' if you don't wish to use them.
 let socials = [

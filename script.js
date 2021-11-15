@@ -72,19 +72,22 @@ let examplesArchive = [
     "./examples/stone_news/index",
     "./examples/absent - light/index",
     "./examples/absent - dark/index",
-    "./examples/absent_comic - light/index"
+    "./examples/absent_comic - light/index",
+    "./examples/absent_comic - dark/index"
 ];
 let examplesNames = [
     "Stone News",
     "Absent Light",
     "Absent Dark",
-    "Absent Comic Light"
+    "Absent Comic Light",
+    "Absent Comic Dark"
 ];
 let examplesDescription = [
     "An old timey, stoney newspaper! What will you journal on? What stories will you share?",
     "Color and much styling is absent here.",
     "Color and much styling is absent here but darkness.",
-    "Color and much styling is absent here."
+    "Color and much styling is absent here.",
+    "Color and much styling is absent here but darkness."
 ];
 let examplesPictures = [
     ["./assets/images/post/stone_1.png", "./assets/images/post/stone_2.png", "./assets/images/post/stone_3.png"],
@@ -95,7 +98,9 @@ let examplesPictures = [
 let examplesGithub = [
     "https://github.com/RodFireProductions/DeadJournals-Website/tree/main/examples/stone_news",
     "https://github.com/RodFireProductions/DeadJournals/tree/main/absent%20-%20light",
-    "https://github.com/RodFireProductions/DeadJournals/tree/main/absent%20-%20dark"
+    "https://github.com/RodFireProductions/DeadJournals/tree/main/absent%20-%20dark",
+    "https://github.com/RodFireProductions/DeadJournals-Website/tree/main/examples/absent_comic%20-%20light",
+    "https://github.com/RodFireProductions/DeadJournals-Website/tree/main/examples/absent_comic%20-%20dark"
 ]
 
 // --------------------------- # # # # #
