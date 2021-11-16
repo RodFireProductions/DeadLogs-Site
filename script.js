@@ -92,7 +92,9 @@ let examplesDescription = [
 let examplesPictures = [
     ["./assets/images/post/stone_1.png", "./assets/images/post/stone_2.png", "./assets/images/post/stone_3.png"],
     ["./assets/images/post/absent_1.png", "./assets/images/post/absent_2.png", "./assets/images/post/absent_3.png"],
-    ["./assets/images/post/absent2_1.png", "./assets/images/post/absent2_2.png", "./assets/images/post/absent2_3.png"]
+    ["./assets/images/post/absent2_1.png", "./assets/images/post/absent2_2.png", "./assets/images/post/absent2_3.png"],
+    ["./assets/images/post/absentcomic_1.png", "./assets/images/post/absentcomic_2.png", "./assets/images/post/absentcomic_3.png"],
+    ["./assets/images/post/absentcomic2_1.png", "./assets/images/post/absentcomic2_2.png", "./assets/images/post/absentcomic2_3.png"]
 ]
 
 let examplesGithub = [
