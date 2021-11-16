@@ -19,3 +19,12 @@
     90% { transform: translate(1px, 2px) rotate(0deg); }
     100% { transform: translate(1px, -2px) rotate(-1deg); }
 }
+
+.code {
+    background-color: #46261a22;
+    padding: 5px;
+    overflow-y: auto;
+}
+.green { color: green; }
+.green a { color: green; text-decoration: overline; }
+.green a:hover { color: green; text-decoration: underline; }

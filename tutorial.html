@@ -22,8 +22,11 @@
                 <hr>
                 <div class="postcontent">
 
-                    <h3>This page is currently under construction so not everything is spoken about!
-                        Please be patient!</h3>
+                    <h3>
+                        This page is still under construction so not everything is spoken about yet!
+                        Please be patient! If you need quick help though, feel free to
+                        <a href="#email">contact me</a>.
+                    </h3>
 
                     <p>
                         Welcome to the DeadJournals's quick tutorial! Though the files themselves
@@ -67,6 +70,77 @@
                             and get some of the basic page generation features of DeadJournals
                             customized to you.
                         </p>
+                        <p>
+                            Here's what those lines look like without all of those comments.
+                            I'll go through each of the sections I labelled here.
+                        </p>
+                        <pre><div class="code"><span class="green">// <a href="#sectiona">Section A</a></span>
+let siteName = "My Site!";
+let lang = "en";
+let siteUrl = "";
+
+<span class="green">// <a href="#sectionb">Section B</a></span>
+let socials = [
+    ['My Blog', siteUrl]
+]
+
+let author = {
+    name: 'Your Name',
+    title: 'A human on the internet',
+    picture: null,
+    extra: ['human'],
+    line: null
+}</div></pre>
+                        <h4 id="sectiona">Section A</h4>
+                        <p>
+                            The first variable you get the configure is <code>siteName</code>
+                            which is merely the name of your site, like this site is named
+                            DeadJournals and Facebook is named Facebook.
+                            <br><br>
+                            Secondly, <code>lang</code>
+                            is the language that your site will be in. By default, 'en' (English) is used as
+                            the value. You can change this value though if you plan on writing
+                            your site in a different language. Here's a <a target="_blank" href="https://www.w3schools.com/tags/ref_language_codes.asp">source</a>
+                            with a reference list for other languages. This language tag helps
+                            screen reader technology, search engines, and page formatting.
+                            <br><br>
+                            The last one here is <code>siteUrl</code>. This is the least
+                            important of the three. This variable is not used anywhere in
+                            the code but the <code>socials</code> array by default. It is
+                            meant to be a way to quickly link the home page of your site
+                            where you want in the code. <span style="text-decoration:underline;">
+                            You can leave this blank if you don't
+                            wish to use it.<span>
+
+                        </p>
+
+                        <h4 id="sectionb">Section B</h4>
+                        <p>
+                            There's two parts of this section, <code>
+                            socials</code> and <code>author</code>.
+                            These both deal with the auto generator for the
+                            about page. When both are completely filled out,
+                            it'll generate something that looks a little like this
+                            (results vary depending on theme) and it's code:
+                        </p>
+                        <img style="width: 300px; margin: 0 auto;" src="assets/images/tutorials/getstarted1.png" alt="An image of one of the example site's about page">
+<pre class="code">
+let socials = [
+    ['My Blog', siteUrl], <span class="green">// In this case, siteUrl is set to this example site's home page</span>
+    ['DeadJournals', 'https://deadjournals.deadinsideartist.art'],
+    ['GitHub', 'https://github.com/RodFireProductions/DeadJournals/tree/main/examples/absent']
+]
+
+let author = {
+    name: "White Void",
+    title: 'The Purest Abyss',
+    picture: "./assets/images/author.png",
+    pronouns: 'ze/zir',
+    extra: ['demiace', 'swirling'],
+    line: '"<b>BE NOT AFRAID</b>" - Biblically Accurate Angels'
+}
+</pre>
+
                     </section>
                     <div style="text-align: center;">-❁-</div>
 
@@ -86,11 +160,18 @@
                     <section id="faq">
                         <h3>Frequently Asked Questions</h3>
                         <ul>
-                            <li><a href="#1">Do you really have to know html to use DeadJournals?</a></li>
+                            <li><a href="#1">Why is this tool named DeadJournals?</a></li>
+                            <li><a href="#2">Do you really have to know html to use DeadJournals?</a></li>
                             <li><a href="#email">Question not answered here?</a></li>
                         </ul>
 
                         <div id="1">
+                            <b>Why is this tool named DeadJournals?</b><br>
+                            I name everything 'dead' at first as a placeholder. I just didn't care
+                            to figure out a better name for this one.
+                        </div><br>
+
+                        <div id="2">
                             <b>Do you really have to know html to use DeadJournals?</b><br>
                             I mean you don't technically have to; you could use a wysiwyg (what you see is what you get)
                             editor that converts
