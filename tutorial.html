@@ -23,8 +23,9 @@
                 <div class="postcontent">
 
                     <h3>
-                        This page is still under construction so not everything is spoken about yet!
-                        Please be patient! If you need quick help though, feel free to
+                        This page is still partially under construction; apologies if documentation isn't
+                        thorough. (None of it is proofread either)
+                        If you need quick help though, feel free to
                         <a href="#email">contact me</a>.
                     </h3>
 
@@ -39,13 +40,13 @@
                         <li><a href="#download">Download DeadJournals</a></li>
                         <li><a href="#basicconfigs">Set Up Basic Configurations</a></li>
                         <!-- <li><a href=""></a></li> -->
-                        <li><a href="#tutorials">Addition Tutorials</a></li>
                         <li><a href="#navigation">Page Creation and Navigation</a></li>
                         <ul>
                             <li><a href="#navblog">Blog</a></li>
                             <li><a href="#navcomic">Comic</a></li>
                         </ul>
                         <li><a href="#hosting">Hosting Your Site</a></li>
+                        <li><a href="#tutorials">Addition Tutorials</a></li>
                     </ul>
                     <div style="text-align: center;">- - - - - - -</div>
                     <section id="download">
@@ -256,9 +257,7 @@ let author = {
                             which <code>template.html</code> file you copy. If you want to use a
                             child folder, copy the file in the <code>folder</code> folder, if not
                             then use the one in the <code>post</code> folder.
-                            You have to name your file very specifically; in this tutorial I'll be using files referred to as
-                            <code>extra=cover.html</code> and <code>extra=1.html</code>.
-                            We'll go over how to properly name your file in the Setting Up Navigation section.
+                            We'll go over how to properly name your file <a href="#comicnaming">here</a>.
                         </p>
                         <p>
                             In your file, look for the section of code that looks like the following.
@@ -297,8 +296,65 @@ let chapterArchive = [
     }
 ]
 </pre>
+                    <p>
+                        The array <code>chapterArchive</code> by default holds an empty
+                        chapter dictionary. Within that dictionary is the a list of key values
+                        that needs to be filled out for the archive and navigation system to properly
+                        work. Let's go through them!
+                    </p>
+                    <p>
+                        The keys <code>name</code> and <code>chapter</code> are basically the
+                        same thing. They're both suppose to hold that chapter's name. The
+                        difference between the two is that <code>name</code> will be shown on
+                        the archive page, while <code>chapter</code> will be shown in all of the
+                        chapter pages' headers. It's recommended to keep <code>chapter</code> simple,
+                        while <code>name</code> can have some jazzy decorations.
+                    </p>
+                    <p>
+                        The <code>src</code> is very important when it comes to naming files. All
+                        the files in that particular chapter <span style="text-decoratiion: underline;">NEED</span>
+                        their names to begin with whatever the value for <code>src</code>.
+                    </p>
+                    <p>
+                        The value for <code>location</code> is the relatvie folder location to
+                        <code>script.js</code>'s location. By default, this value is "page". If
+                        were wanting to use a folder inside the <code>page</code> for your files,
+                        then the value would be "page/(folder name)".
+                    </p>
+                    <p>
+                        The value for <code>page</code> is supposed to be whatever you wish
+                        your pages to be referred as. For example, you can have it be "Page"
+                        (Page 1), "Episode" (Episode 1), "Note" (Note 1), etc. You can be as
+                        creative or uncreative as you want. Like <code>chapter</code>, this will
+                        also appear in the page headers.
+                    </p>
+                    <p>
+                        Finally, <code>pages</code>
+                    </p>
 
 
+<pre class="code"><span class="green">// Code snippet from the comic theme examples //</span>
+let chapterArchive = [
+    {
+        name: '|| ♡ || Meet Chalice || ♡ ||',
+        src: 'meet', <span class="green">// Files would look like: meet=*.html</span>
+        location: 'page/meet_chalice',
+        pages: meetChalice,
+
+        chapter: 'Meet Chalice ♡',
+        page: 'Page'
+    },
+    {
+        name: '|| ✂️ || Hurt || ✂️ ||',
+        src: 'hurt', <span class="green">// Files would look like: hurt=*.html</span>
+        location: 'page',
+        pages: hurt,
+
+        chapter: 'Hurt ✂️',
+        page: 'Page'
+    }
+]
+</pre>
                     </section>
                     <div style="text-align: center;">-❁-</div>
 

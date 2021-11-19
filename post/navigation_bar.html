@@ -31,22 +31,32 @@
                 <p>
                     In <code>script.js</code> find this snippet:
                 </p>
-                <img src="../assets/images/tutorials/navbar1.png" alt="" style="display: block; margin: 0 auto; width: 90%;">
-
+<pre class="code">let navi = [
+    ['home','/index.html'],
+    ['about','/about.html'],
+    ['archive','/archive.html']
+]</pre>
                 <h2>To add more links:</h2>
                 <p>
                     Add the name you want to show up in
                     the navigation bar and the page's location relative
                     to your primary folder in its own array below the others.
                 </p>
-                <img src="../assets/images/tutorials/navbar2.png" alt="" style="display: block; margin: 0 auto; width: 90%;">
-
+<pre class="code">let navi = [
+    ['home','/index.html'],
+    ['about','/about.html'],
+    ['archive','/archive.html'],
+    ['extra', '/extra.html'] <span class="green">// A new 'extra' link</span>
+]</pre>
                 <h2>To remove links:</h2>
                 <p>
                     Just pick the one you want to remove and delete it!
                 </p>
-                <img src="../assets/images/tutorials/navbar3.gif" alt="" style="display: block; margin: 0 auto; width: 90%;">
-
+<pre class="code">let navi = [
+    ['home','/index.html'],
+    <span class="green">//['about','/about.html'] Has been commented out or "deleted"</span>
+    ['archive','/archive.html']
+]</pre>
 
                 </div>
                 <hr>
