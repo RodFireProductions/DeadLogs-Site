@@ -40,6 +40,12 @@
                         <li><a href="#basicconfigs">Set Up Basic Configurations</a></li>
                         <!-- <li><a href=""></a></li> -->
                         <li><a href="#tutorials">Addition Tutorials</a></li>
+                        <li><a href="#navigation">Page Creation and Navigation</a></li>
+                        <ul>
+                            <li><a href="#navblog">Blog</a></li>
+                            <li><a href="#navcomic">Comic</a></li>
+                        </ul>
+                        <li><a href="#hosting">Hosting Your Site</a></li>
                     </ul>
                     <div style="text-align: center;">- - - - - - -</div>
                     <section id="download">
@@ -52,6 +58,12 @@
                             Note: If you plan on doing all of your own css,
                             it's recommended you start with an Absent theme.
                         </p>
+                        <p>
+                            There are two different templates as of right now, the blog
+                            template and the comic template. The comic ones will have
+                            <code>comic</code> in its file name, while the others will
+                            be just the default blog ones.
+                        </P>
                         <p>
                             Once the zip is downloaded, you need to unzip it to a desired location.
                         </p>
@@ -91,7 +103,7 @@ let author = {
     extra: ['human'],
     line: null
 }</div></pre>
-                        <h4 id="sectiona">Section A</h4>
+                        <h3 id="sectiona">Section A</h3>
                         <p>
                             The first variable you get the configure is <code>siteName</code>
                             which is merely the name of your site, like this site is named
@@ -114,7 +126,7 @@ let author = {
 
                         </p>
 
-                        <h4 id="sectionb">Section B</h4>
+                        <h3 id="sectionb">Section B</h3>
                         <p>
                             There's two parts of this section, <code>
                             socials</code> and <code>author</code>.
@@ -144,9 +156,199 @@ let author = {
                     </section>
                     <div style="text-align: center;">-❁-</div>
 
+                    <section id="navigation">
+                        <h2>Page Creation and Navigation</h2>
+                        <p>
+                            DeadJournals comes with two different archive and navigation
+                            systems. The blog system is the one used for a basic blog, while
+                            comic system is meant to be used for webcomics. Of course, you
+                            could use the blog system for a webcomic, but I made the webcomic
+                            one anyways.
+                        </p>
+                        <p>
+                            The simplist of the two is the blog system, while the comic one needs
+                            a bit more effort.
+                        </p>
+
+                        <h3 id="navblog">Blog</h3>
+
+                        <p>
+                            Make sure you keep all your posts are located in the
+                            <code>post</code> folder; this is important. What they're named doesn't matter.
+                        </p>
+
+                        <h4>Page Creation</h4>
+                        <p>
+                            First, you will need to make a copy of the <code>tutorial.html</code>
+                            file or just copy and past the contents into a new file. Name
+                            the file whatever, in this tutorial it'll be referred to as
+                            <code>extra.html</code>, just make sure you put the <code>.html</code>
+                            extension at the end.
+                        </p>
+                        <p>
+                            In your file, look for the section of code that looks like the following.
+                            That's where you'll insert your page/post content. You don't need to edit
+                            the file in any other place unless you know what you're doing.
+                        </p>
+<pre class="code">&#60;div class="postcontent"&#62;<span class="green">
+    &#60;!------------------------------------------------&#62;
+    &#60;!-- This is where you place your post content! --&#62;
+    </span>
+
+&#60;/div&#62;
+</pre>
+                        <h4>Setting Up Navigation/Archive</h4>
+                        <p>
+                            Now we'll be working in the <code>script.js</code> file
+                            again. Please locate this section of the code:
+                        </p>
+<pre class="code">let postArchive = [
+    <span class="green">//['Title', 'Date', 'Location']</span>
+]</pre>
+
+                        <p>
+                            There's a comment there that already shows you the basic format.
+                            The title is simply the title of your post. The date is the day you
+                            posted it. I'd just keeping all your date formats the same for all your
+                            posts. And lastly the location is where your post file is located
+                            relative to the <code>script.js</code> file.
+                        </p>
+                        <p>
+                            Here's what it would look like if I added the <code>extra.html</code>
+                            file I created in the previous section:
+                        </p>
+<pre class="code">let postArchive = [
+    <span class="green">//['Title', 'Date', 'Location']</span>
+    ['First post!', '17 Nov 2021', 'post/extra.html']
+]</pre>
+                        <p>
+                            Do know that you need to include a comma at the end of each
+                            nested array before making a new one. You'll get a syntax
+                            error if you don't. For example:
+                        </p>
+<pre class="code">    ['First post!', '17 Nov 2021', 'post/extra.html']<span style="color: red">,</span> <span class="green">// &#60;---</span>
+    ['Second post!', '18 Nov 2021', 'post/extra2.html']
+</pre>
+                        <p>
+                            <mark>
+                                Everytime you want to add a new post, make sure you
+                                add it at the <span style="text-decoration: underline">bottom</span>
+                                of the array/list.
+                            </mark>
+                        </p>
+
+
+                        <h3 id="navcomic">Comic</h3>
+                        <h4>Page Creation</h4>
+
+                        <p>
+                            This template has two different folder options to keep
+                            you comic/book chapters organized. You're able to keep your
+                            pages in the <code>page</code> folder and in a folder inside
+                            the <code>page</code> folder. By default, there is a folder
+                            named <code>folder</code> (I know, very creative) in there.
+                        </p>
+                        <p>
+                            First, you will need to make a copy of the <code>tutorial.html</code>
+                            file or just copy and past the contents into a new file.
+                            Depending on whether or not you want you file located in the
+                            <code>post</code> folder of a child folder of it will change
+                            which <code>template.html</code> file you copy. If you want to use a
+                            child folder, copy the file in the <code>folder</code> folder, if not
+                            then use the one in the <code>post</code> folder.
+                            You have to name your file very specifically; in this tutorial I'll be using files referred to as
+                            <code>extra=cover.html</code> and <code>extra=1.html</code>.
+                            We'll go over how to properly name your file in the Setting Up Navigation section.
+                        </p>
+                        <p>
+                            In your file, look for the section of code that looks like the following.
+                            That's where you'll insert your author comment. You don't need to edit
+                            the file in any other place unless you know what you're doing.
+                        </p>
+<pre class="code">&#60;div class="postcontent"&#62;<span class="green">
+    &#60;!------------------------------------------------&#62;
+    &#60;!-- This is where you place your author comment! --&#62;
+    </span>
+
+&#60;/div&#62;
+</pre>
+                        <h4>Setting Up Navigation/Archive</h4>
+
+                        <p>
+                            First things first, we'll be working in the <code>script.js</code>
+                            file. Locate the following snippet of code:
+                        </p>
+                        <p>
+                            We're first going to set up a chapter and go over how to
+                            properly name files.
+                            Locate the following snippet of code:
+                        </p>
+<pre class="code"><span class="green">//=// --- Chapter --- //=// [3]</span>
+
+let chapterArchive = [
+    {
+        name: '', <span class="green">// Archive Chapter name</span>
+        src: '', <span class="green">// HTML file prefix</span>
+        location: 'page', <span class="green">// Folder location relative to this file's location</span>
+        pages: null, <span class="green">// Insert the name of the array you made in the section before this</span>
+
+        chapter: '', <span class="green">// Comic page chapter name</span>
+        page: 'Page' <span class="green">// Page, episode, etc</span>
+    }
+]
+</pre>
+
+
+                    </section>
+                    <div style="text-align: center;">-❁-</div>
+
+                    <section id="hosting">
+                        <h2>Hosting Your Site</h2>
+                        <p>
+                            Your site is just a simple static site, so it'll
+                            be easy to find free hosting plans for it. Here
+                            are some good platforms I'd suggest:
+                        </p>
+                        <ul>
+                            <li><a target="_blank" href="https://www.netlify.com/">Netlify</a></li>
+                            <ul>
+                                <li>Subdomain: *.netlify.app</li>
+                                <li>Can use you custom domain for free.</li>
+                                <li>Can host unlimited sites for free.</li>
+                                <li>Storage: 1 GB</li>
+                                <li>Bandwidth: 100 GB</li>
+                            </ul>
+                            <br>
+                            <li><a target="_blank" href="https://neocities.org/">Neocities</a></li>
+                            <ul>
+                                <li>Subdomain: *.neocities.org</li>
+                                <li>You have to be a monthly supporter to use your custom domain.</li>
+                                <li>Can host one site for free.</li>
+                                <li>Storage: 1 GB</li>
+                                <li>Bandwidth: 100 GB</li>
+                            </ul>
+                            If you choose Neocities, I'd find it nice if you'd add the tag
+                            <code>deadjournals</code> to your site.
+                            <br><br>
+                            <li><a target="_blank" href="https://pages.github.com/">GitHub Pages</a></li>
+                            <ul>
+                                <li>Subdomain: *.github.io</li>
+                                <li>Can use your custom domain for free.</li>
+                                <li>Can host unlimited sites for free.</li>
+                                <li>Storage: 1 GB</li>
+                                <li>Bandwidth: 100 GB</li>
+                            </ul>
+
+                            <!-- <li><a target="_blank" href=""></a></li> -->
+                        </ul>
+
+                    </section>
+                    <div style="text-align: center;">-❁-</div>
+
+
                     <!--
                     <section id="">
-                        <h3></h3>
+                        <h2></h2>
                     </section>
                     -->
 
