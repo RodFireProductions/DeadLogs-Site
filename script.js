@@ -41,8 +41,8 @@ let author = {
 let navi = [
     ['home','/index'],
     ['examples','/examples'],
-    ['get started','/tutorial'],
-    ['about', '/about']
+    ['get started','/tutorial']//,
+    //['about', '/about']
 ]
 
 // --------------------------- # # # # #
