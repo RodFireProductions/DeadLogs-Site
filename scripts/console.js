@@ -6,24 +6,22 @@
 
 // Feel free to change the default settings! ♡
 let credit = {
-	name: siteName,
-    author: author.name,
 	description: [
+		`${siteName} belongs to ${author.name} and was made with DeadLogs.`,
         "--------------------------------",
-        "✨Trans Rights has been and will always be Human Rights!✨",
-        "♡ POC lives will always matter! ♡"
+        "✨Trans Rights are human rights!✨",
+        "♡ POC lives will always matter! ♡",
+		"--------------------------------",
+		"Have a lovely day."
     ]
 }
 
+// I wouldn't recommend touching this!
+
 if (credit != null){
-	console.group("💀♡ Lookin' under the hood? ♡💀")
-	console.log(
-		"%c"+ credit.name + " belongs to " + author.name, "font-style: italic;"
-	)
-	let z;
-    for (z = 0; z < credit.description.length; z++) {
+	console.group("Lookin' under the hood?")
+    for (let z = 0; z < credit.description.length; z++) {
 		console.log(credit.description[z])
     }
-
 	console.groupEnd()
 }

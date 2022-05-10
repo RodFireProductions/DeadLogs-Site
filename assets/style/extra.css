@@ -1,4 +1,7 @@
 
+.centered { display: block; margin: auto; }
+
+/**/
 .scared {
     animation: an_shake .2s linear infinite;
 }
@@ -20,6 +23,7 @@
     100% { transform: translate(1px, -2px) rotate(-1deg); }
 }
 
+/**/
 .code {
     background-color: #46261a22;
     padding: 5px;

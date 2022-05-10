@@ -1,1 +1,0 @@
-- How to add more buttons to the navigation bar?
