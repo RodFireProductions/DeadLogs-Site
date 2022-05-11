@@ -31,6 +31,10 @@ let navi = [
     ['examples', '/examples.html']
 ];
 
+// The link that holds the archive list.
+let middleLink = ['tutorials', '/tutorial.html'];
+let folder = 'post';
+
 // This is the text that appears in the footer of your site. Feel free to customize it.
 let footer = `
     Owned & Written by <a href="${author.url}" target="_blank">${author.name}</a>
@@ -55,6 +59,7 @@ let footer = `
 
 let postArchive = [
     //['Title', 'Date', 'Location']
-]
+];
+
 // --------------------------- # # # # #
 // // / / / // / / / / // / / / / / / / /

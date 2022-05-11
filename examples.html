@@ -6,6 +6,28 @@
         <link rel="stylesheet" href="./assets/style/main.css">
         <link rel="icon" href="./assets/images/favicon.png" type="image/png">
         <title>Examples & Themes</title>
+
+        <style>
+            .card {
+                display: grid;
+                grid-auto-flow: row;
+
+                padding: 10px;
+            }
+
+            .gridz {
+                display: grid;
+                grid-template-columns: 1fr 1fr 1fr;
+            }
+            @media only screen and (max-width: 625px) {
+            	.gridz { grid-template-columns: 1fr 1fr; }
+            }
+            }
+            @media only screen and (max-width: 400px) {
+                .gridz { grid-template-columns: 1fr; }
+            }
+
+        </style>
     </head>
     <body>
         <div id="container">
@@ -18,13 +40,50 @@
             <main>
                 <!------------------------------------------------>
                 <!-- This is where you place your content! -->
+                <div class="gridz">
 
+                    <a class="center card" href="themes/wheat/">
+                        <img src="assets/images/themes/wheat.webp" alt="Wheat Theme" class="centered" style="width:100%;height:auto;">
+                        <p>Wheat Live Demo</p>
+                    </a>
+                    <a class="center card" href="themes/trees/">
+                        <img src="assets/images/themes/trees.webp" alt="Trees Theme" class="centered" style="width:100%;height:auto;">
+                        <p>Trees Live Demo</p>
+                    </a>
+                    <a class="center card" href="themes/bananas/">
+                        <img src="assets/images/themes/bananas.webp" alt="Bananas Theme" class="centered" style="width:100%;height:auto;">
+                        <p>Bananas Live Demo</p>
+                    </a>
+                    <a class="center card" href="themes/blacksun/">
+                        <img src="assets/images/themes/blacksun.webp" alt="Black Sun Theme" class="centered" style="width:100%;height:auto;">
+                        <p>Black Sun Live Demo</p>
+                    </a>
+                    <a class="center card" href="themes/whitesun/">
+                        <img src="assets/images/themes/whitesun.webp" alt="White Sun Theme" class="centered" style="width:100%;height:auto;">
+                        <p>White Sun Live Demo</p>
+                    </a>
+                    <a class="center card" href="themes/skwiggle/">
+                        <img src="assets/images/themes/skwiggle.webp" alt="Skwiggle Theme" class="centered" style="width:100%;height:auto;">
+                        <p>Skwiggle Live Demo</p>
+                    </a>
+                    <a class="center card" href="themes/stars/">
+                        <img src="assets/images/themes/stars.webp" alt="Stars Theme" class="centered" style="width:100%;height:auto;">
+                        <p>Stars Live Demo</p>
+                    </a>
+                    <a class="center card" href="themes/stardustdark/">
+                        <img src="assets/images/themes/stardustdark.webp" alt="Stardust Dark Theme" class="centered" style="width:100%;height:auto;">
+                        <p>Stardust Dark Live Demo</p>
+                    </a>
+                    <a class="center card" href="themes/stardustlight/">
+                        <img src="assets/images/themes/stardustlight.webp" alt="Stardust Light Theme" class="centered" style="width:100%;height:auto;">
+                        <p>Stardust Light Live Demo</p>
+                    </a>
+                    <a class="center card" href="themes/worms/">
+                        <img src="assets/images/themes/worms.webp" alt="Theme" class="centered" style="width:100%;height:auto;">
+                        <p>Live Demo</p>
+                    </a>
 
-
-
-
-
-
+                </div>
 
             </main>
             <hr id="seperator">
