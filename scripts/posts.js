@@ -45,9 +45,6 @@ let previous = postArchive[index-1];
 let next = postArchive[index+1];
 let currentLocation = postArchive[index];
 
-console.log(postlocation)
-console.log(currentLocation)
-
 // ---- Basic Injections ---- /// [3]
 
 // HTML language attribute

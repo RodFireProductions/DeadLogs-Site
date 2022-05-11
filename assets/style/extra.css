@@ -1,6 +1,12 @@
 
 .centered { display: block; margin: auto; }
 
+html { scrollbar-color: #666 #000; }
+::selection { background: #000000; color: #666; }
+::-moz-selection { background: #000000; color: #666; }
+::-webkit-scrollbar-track { background-color: #000; }
+::-webkit-scrollbar-thumb { background-color: #666; }
+
 /**/
 .scared {
     animation: an_shake .2s linear infinite;
@@ -24,11 +30,3 @@
 }
 
 /**/
-.code {
-    background-color: #46261a22;
-    padding: 5px;
-    overflow-y: auto;
-}
-.green { color: green; }
-.green a { color: green; text-decoration: overline; }
-.green a:hover { color: green; text-decoration: underline; }
