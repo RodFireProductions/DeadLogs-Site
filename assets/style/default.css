@@ -42,7 +42,7 @@ body {
     margin: 0px;
 }
 
-mark, ::selection { background: var(--accent-color); color: var(--back-color); }
+mark, ::selection { background: #dedede; color: var(--back-color); font-family: var(--font-main); }
 
 
 p { text-indent: var(--text-indent); }
@@ -90,6 +90,8 @@ h1 {
     line-height: 1.1;
 }
 
+h2,h3,h4,h5,h6 { line-height: 0.1; }
+
 #container {
     background-color: var(--back-color);
     color: var(--text-color);
@@ -134,7 +136,7 @@ h1 {
 #archivePage, #recentPosts {
     line-height: 1.3em;
     margin: 10px auto;
-    text-align: center;
+    /* text-align: center; */
     padding: 10px;
 }
 #archivePage a, #recentPosts a {

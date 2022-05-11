@@ -34,6 +34,10 @@
         <!-- Syntax Highlighter -->
         <script src="scripts/highlight/highlight.min.js" charset="utf-8"></script>
         <script>hljs.highlightAll();</script>
+
+        <!-- Additional CSS -->
+        <style>
+        </style>
     </head>
     <body>
         <div id="container">
@@ -50,10 +54,128 @@
                     to give at least a little outside guidance.
                 </p>
 
-                <!--
-                <h2>Specific Tutorials</h2>
+                <h2>Let's begin</h2>
+
+                <ol>
+                    <li><a href="#download">Download a theme</a></li>
+                    <li><a href="#configure">Configure site variables</a></li>
+                    <li><a href="#first">Make your first post</a></li>
+                    <li><a href="#add">Add content</a></li>
+                </ol>
+                <div class="right">◉</div>
+
+                <!-- Downloading -->
+                <section id="download">
+                    <h3>Download a theme</h3>
+
+                    <p>
+                        First things first—you need to pick a premade theme and download it.
+                        There are <a href="examples.html">examples</a> up to show you your
+                        options. <mark>You can edit the theme to your liking later.</a>
+                    </p>
+
+                    <p>
+                        Once you've chosen a theme, you should download it from either
+                        <a href="https://rodfireproductions.itch.io/deadlogs" target="_blank">Itch</a>
+                        or <a href="https://github.com/RodFireProductions/DeadLogs/releases" target="_blank">GitHub</a>.
+                        After it's downloaded, you need to unzip it into an empty folder.
+                        This will be your site folder, name it however you'd like.
+                    </p>
+                </section>
+                <div class="right">◉</div>
+                <!-- Configuring -->
+                <section id="configure">
+                    <h3>Configure site variables</h3>
+
+                    <p>
+                        So, now that your site is downloaded, you need to set some variables.
+                        Open <code>deadlogs.js</code> in a text editor or IDE. You should be
+                        bombarded with comments once opened. They explain some of what we're
+                        going to go over here. We'll be going through them in sections.
+                    </p>
+
+                    <h4>First Section: About the site</h4>
+
+<pre><code>let siteName = 'My Site!';
+let lang = 'en'; // The language of your site. Example, en = english, fr = français (french), etc.
+let siteUrl = ''; // You can just put the url of your site here, whether that be a subdomain or custom.
+
+// Put down your name and website/social media
+let author = {
+    name: 'Your Name',
+    url: ''
+};</code></pre>
+                    <p>
+                        I feel as if these variables are kinda self-explanatory.
+                        The name of your site, your sites url, your name, and the
+                        url to one of your socials or websites.
+                    </p>
+                    <p>
+                        The variable I'd like to point out is the <code>lang</code>.
+                        Whatever you define <code>lang</code> as gets automatically
+                        inserted in your HTML files. It's <mark>very important for accesibility</mark>
+                        reasons for you to put the proper tag in for the language your
+                        site will be in. You can read more about it
+                        <a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Global_attributes/lang" target="_blank">here</a>.
+                    </p>
+
+                    <h4>Second Section: Navigation</h4>
+
+<pre><code>// This is where you define the pages that'll be in your navigation bar throughout the site.
+let navi = [
+    ['home','/index.html'],
+    ['about','/about.html'],
+    ['archive','/archive.html']
+];
+
+// The link that holds the archive list.
+let middleLink = ['archive', '/archive.html'];
+// Name of folder your posts are in.
+let folder = 'post';</code></pre>
+
+                    <p>
+                    </p>
+
+                    <img class="centered bordered" src="assets/images/posts/postnav.webp" alt="">
+
+                    <h4>Third Section: The Footer</h4>
+
+<pre><code>// This is the text that appears in the footer of your site. Feel free to customize it.
+let footer = `
+    Owned & Written by &#60;a href="${author.url}" target="_blank"&#62;${author.name}&#60;/a&#62;
+`;</code></pre>
+
+                    <h4>Fourth Section: The Archive</h4>
+
+<pre><code>let postArchive = [
+    //['Title', 'Date', 'Location']
+];</code></pre>
+                    <p>
+                        This is where all your posts will be accounted for.
+                        We're actually going to be covering how to set this up
+                        in the <a href="#first">next section</a>.
+                    </p>
+
+
+                </section>
+                <div class="right">◉</div>
+                <!-- First Post -->
+                <section id="first">
+                    <h3>Make your first post</h3>
+
+                    <p></p>
+                </section>
+                <div class="right">◉</div>
+                <!-- Adding Content -->
+                <section id="add">
+                    <h3>Add content</h3>
+
+                    <p></p>
+                </section>
+                <div class="right">◉</div>
+
+                <h2>More Info:</h2>
                 <div id="archivePage" class="archive"></div>
-                -->
 
             </main>
             <hr id="seperator">

@@ -59,6 +59,8 @@ let footer = `
 
 let postArchive = [
     //['Title', 'Date', 'Location']
+    ['My Recommendations', 'May 11, 2022', 'recommendations.html']
+    ['FAQ', 'Last Updated: May 11, 2022', 'faq.html']
 ];
 
 // --------------------------- # # # # #
