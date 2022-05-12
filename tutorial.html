@@ -62,10 +62,10 @@
                     <li><a href="#first">Make your first post</a></li>
                     <li><a href="#add">Add content</a></li>
                 </ol>
-                <div class="right">◉</div>
+                <div class="right" id="download">◉</div>
 
                 <!-- Downloading -->
-                <section id="download">
+                <section>
                     <h3>Download a theme</h3>
 
                     <p>
@@ -78,13 +78,14 @@
                         Once you've chosen a theme, you should download it from either
                         <a href="https://rodfireproductions.itch.io/deadlogs" target="_blank">Itch</a>
                         or <a href="https://github.com/RodFireProductions/DeadLogs/releases" target="_blank">GitHub</a>.
-                        After it's downloaded, you need to unzip it into an empty folder.
-                        This will be your site folder, name it however you'd like.
+                        After it's downloaded, you need to unzip it. There should be a folder
+                        named after the theme you choose. This will be your site folder; feel
+                        free to rename it to whatever you want.
                     </p>
                 </section>
-                <div class="right">◉</div>
+                <div class="right" id="configure">◉</div>
                 <!-- Configuring -->
-                <section id="configure">
+                <section>
                     <h3>Configure site variables</h3>
 
                     <p>
@@ -115,8 +116,8 @@ let author = {
                         Whatever you define <code>lang</code> as gets automatically
                         inserted in your HTML files. It's <mark>very important for accesibility</mark>
                         reasons for you to put the proper tag in for the language your
-                        site will be in. You can read more about it
-                        <a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Global_attributes/lang" target="_blank">here</a>.
+                        site will be in. You can read more about it in the
+                        <a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Global_attributes/lang" target="_blank">MDN Web Docs</a>.
                     </p>
 
                     <h4>Second Section: Navigation</h4>
@@ -126,17 +127,39 @@ let navi = [
     ['home','/index.html'],
     ['about','/about.html'],
     ['archive','/archive.html']
-];
+];</code></pre>
 
-// The link that holds the archive list.
-let middleLink = ['archive', '/archive.html'];
-// Name of folder your posts are in.
+                    <p>
+                        The <code>navi</code> variable lists all of the pages
+                        that will be included in the header navigation. By default,
+                        this variable includes a home page, about page, and archive page.
+                        You can change the navigation how ever you want. Add pages, subtract pages,
+                        etc. Just keep in mind how packed the header may become if you add too many.
+                    </p>
+<pre><code>// The link that holds the archive list.
+let middleLink = ['archive', '/archive.html'];</code></pre>
+                    <p>
+                        The <code>middleLink</code> is the link that's listed inbetween
+                        the 'next' and 'previous' links:
+                    </p>
+
+                    <img class="centered bordered" src="assets/images/posts/postnav.webp" alt="The default post navigation.">
+
+                    <p>
+                        By default, it's set to the archive page, but it can be anything
+                        you want. Or, you can leave it blank for nothing.
+                    </p>
+
+
+<pre><code>// Name of folder your posts are in.
 let folder = 'post';</code></pre>
 
                     <p>
+                        The <code>folder</code> is simply the name of the folder that
+                        your post are going to be in. By default, the folder is named 'post';
+                        you can see it in your files, but if you don't like that then you
+                        can change it. Maybe you want it to be called 'files', 'pages', etc.
                     </p>
-
-                    <img class="centered bordered" src="assets/images/posts/postnav.webp" alt="">
 
                     <h4>Third Section: The Footer</h4>
 
@@ -144,6 +167,11 @@ let folder = 'post';</code></pre>
 let footer = `
     Owned & Written by &#60;a href="${author.url}" target="_blank"&#62;${author.name}&#60;/a&#62;
 `;</code></pre>
+                    <p>
+                        This is simply the code that get inserted into your footer. By default,
+                        it inserts what you put as your name and social link in whilst
+                        saying you own the site. You can change this how ever you'd like.
+                    </p>
 
                     <h4>Fourth Section: The Archive</h4>
 
@@ -152,30 +180,102 @@ let footer = `
 ];</code></pre>
                     <p>
                         This is where all your posts will be accounted for.
+                        Every post you want to have shown up in the post navigation
+                        and archive should be put here.
+                    </p>
+                    <p>
                         We're actually going to be covering how to set this up
-                        in the <a href="#first">next section</a>.
+                        in the <a href="#archpo">next section</a>.
                     </p>
 
-
                 </section>
-                <div class="right">◉</div>
+                <div class="right" id="first">◉</div>
                 <!-- First Post -->
-                <section id="first">
+                <section>
                     <h3>Make your first post</h3>
 
-                    <p></p>
+                    <p>
+                        First, you need to create a new file in your 'post' folder, or whatever
+                        you may have renamed it, and save it as an HTML file. I'll be referring
+                        to it as <code>example.html</code>.
+                    </p>
+                    <p>
+                        In that same folder, there should be a file named <code>template.html</code>.
+                        Copy the contents of that file and paste them it into <code>example.html</code>.
+                    </p>
+
+<pre><code id="archpo">let postArchive = [
+    //['Title', 'Date', 'Location']
+];</code></pre>
+
+                    <p>
+                        And now we're back at <code>postArchive</code>. Every time
+                        you make a new post, you're going to want to add it to this list.
+                        Let's add <code>example.html</code>:
+                    </p>
+
+<pre><code id="archpo">let postArchive = [
+    //['Title', 'Date', 'Location']
+    ['Example Post', 'May 11th, 2022', 'example.html']
+];</code></pre>
+                    <p>
+                        As the comment says, you want to list posts' information in the
+                        correct order. It doesn't matter what you name your post or how
+                        you format the date. Heck, you don't even have to use that space for a date.
+                        You can use it for a tag name if you wanted to.
+                    </p>
+
+                    <p>
+                        Now, let's add a second file to the archive list. I'll call it <code>example2.html</code>.
+                    </p>
+
+<pre><code id="archpo">let postArchive = [
+    //['Title', 'Date', 'Location']
+    ['Example Post', 'May 11th, 2022', 'example.html'],
+    ['Example Post 2', '11 May 2022', 'example2.html']
+];</code></pre>
+                    <p>
+                        When adding additional posts to the list, you need to add them to the
+                        bottom of the list. Make sure to add a comma at the end of the post before it
+                        or JavaScript will freak out over your inperfect syntax.
+                    </p>
+
                 </section>
-                <div class="right">◉</div>
+                <div class="right" id="add">◉</div>
                 <!-- Adding Content -->
-                <section id="add">
+                <section>
                     <h3>Add content</h3>
 
+
+                    <p>
+                        This is what theses sections might look like:
+                    </p>
+<pre><code>&#60;main&#62;
+    &#60;!------------------------------------------------&#62;
+    &#60;!-- This is where you place your content! --&#62;
+
+&#60;/main&#62;</code></pre>
+<pre><code>&#60;main&#62;
+    &#60;!------------------------------------------------&#62;
+    &#60;!-- This is where you place your post content! --&#62;
+    &#60;!--
+        I recommend not deleting the `template.html` file,
+        but instead to copy from it.
+    --&#62;
+
+&#60;/main&#62;</code></pre>
+
+<!--
+<pre><code></code></pre>
+-->
                     <p></p>
                 </section>
                 <div class="right">◉</div>
 
+                <!--
                 <h2>More Info:</h2>
                 <div id="archivePage" class="archive"></div>
+                -->
 
             </main>
             <hr id="seperator">

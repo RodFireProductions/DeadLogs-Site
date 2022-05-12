@@ -13,7 +13,7 @@
 
 //=// --- Basic Configs --- //=// [1]
 
-let siteName = 'Tree';
+let siteName = 'Trees';
 let lang = 'en'; // The language of your site. Example, en = english, fr = français (french), etc.
 let siteUrl = ''; // You can just put the url of your site here, whether that be a subdomain or custom.
 
