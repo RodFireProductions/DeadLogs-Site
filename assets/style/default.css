@@ -79,6 +79,7 @@ nav {
 
 nav a {
     text-align: center;
+    line-height: 1.0;
 }
 
 h1 {
@@ -90,7 +91,7 @@ h1 {
     line-height: 1.1;
 }
 
-h2,h3,h4,h5,h6 { line-height: 0.1; }
+h2,h3,h4,h5,h6 { line-height: 1.0; }
 
 #container {
     background-color: var(--back-color);
