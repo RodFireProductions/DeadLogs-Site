@@ -7,5 +7,8 @@
 /* Main CSS */
 @import "default.css";
 @import "extra.css";
-@import "movemove.css";
-@import "doc.css";
+@import "../../scripts/highlight/styles/decaf.min.css"
+
+/*  You can import your own css files if you'd like here and
+    then it'll be automatically used in your site.
+*/

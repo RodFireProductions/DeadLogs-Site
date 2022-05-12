@@ -1,9 +1,0 @@
-
-/* @media only screen and (max-width: 625px) {} */
-
-#itch { display: block; margin:0 auto; width: 560px; height: 175px; }
-#itch2 { display: none; margin:0 auto; width: 216px; height: 175px; }
-@media only screen and (max-width: 780px) {
-    #itch { display: none; }
-    #itch2 { display: block; }
-}

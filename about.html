@@ -5,67 +5,73 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <link rel="stylesheet" href="./assets/style/main.css">
         <link rel="icon" href="./assets/images/favicon.png" type="image/png">
+        <title>About</title>
+        <link rel="shortcut icon" href="assets/images/favicon.png" />
 
-        <meta name="author" content="Rodrick 'RodFireProductions'" />
-        <meta name="description" content="A tool for making static blogs using html, css, and vanilla javascript. Minimum html markup and javascript array and dictionary knowledge is needed to begin working with DeadJournals.">
-        <title></title>
+		<meta name="author" content="Rodrick 'RodFireProductions'" />
+
+		<!-- url -->
+		<link rel="canonical" href="https://deadlogs.deadinsideartist.art/">
+		<meta property="og:url" content="https://deadlogs.deadinsideartist.art/">
+		<meta name="twitter:url" content="https://deadlogs.deadinsideartist.art/">
+
+		<!-- description -->
+		<meta name="description" content="A tool for making static blogs and sites.">
+		<meta property="og:description"	content="A tool for making static blogs and sites.">
+		<meta name="twitter:description" content="A tool for making static blogs and sites.">
+
+		<!-- image -->
+		<meta property="og:image"  content="assets/images/press1.png">
+		<meta name="twitter:image" content="assets/images/press1.png">
+
+		<!-- misc -->
+		<meta name="twitter:site" content="@rodfire8181">
+		<meta name="twitter:creator" content="@rodfire8181">
+		<meta property="twitter:card" content="summary_large_image">
+
+		<meta property="og:type" content="website">
     </head>
     <body>
         <div id="container">
-            <div class="main_content">
-                <div class="header">
-                    <div class="heading">
-                        <h1 id="blogTitle">About</h1>
-                    </div>
-                    <nav id="nav"></nav>
-                </div>
+            <header>
+                <nav id="nav"></nav>
+                <h1>About</h1>
                 <hr>
-                <div class="postcontent">
-                        <!-- Enter content here  -->
+            </header>
 
-                    <section id="about">
-                            <i>The creating of DeadJournals honestly just came out of a whim.</i>
-                            <br><br>
-                            For awhile
-                            I had been thinking of a good way to format and display blog like posts
-                            for my <a href="https://deadinsideartist.art" target="_blank">personal website</a>.
-                            My main site used to run on Jekyll, but even with Jekyll's
-                            convience it just didn't seem right for me.
-                            <br><br>
-                            The push to create DeadJournals was out of a need of mine to make my own kind
-                            of templating code. Jekyll is nice, I won't deny that, but I'm truly not sure
-                            if it's for me, definitely not if I wish to blog/devlog about my work.
-                            One thing about it that really pushes me away is it wanting you to write your
-                            posts in markdown. Of course, you don't have to but you'll end up mainly dealing
-                            with markdown files anyways and it's a turn off for me.
-                            <br><br>
-                            One night my brain told me I should finally trying making my own blogging system
-                            ended up jumping head first into it without really knowing what I was doing,
-                            but I soon got the hang of it. In the middle of my development, the idea hit me
-                            to not just make this a personal blog, but to make it into a tool that can be easily
-                            reused when needed. I figured it'd be nice to make this tool public as well for
-                            anyone who was in need of a less complicated and intimidating static site template
-                            system.
-                            <br><br>
-                            Plus, this is great web development practice for me. I've already learned a lot
-                            so far.
-                            <p>
-                                For more of my thoughts, check out my
-                                <a target="_blank" href="https://deadrambles.deadinsideartist.art/entries/2.html">blog post</a>
-                                about it.
-                            </p>
+            <main>
+                <!------------------------------------------------>
+                <!-- This is where you place your bio! -->
 
-                            <br><br><p style="text-align: right;">- Rodrick</p>
-                    </section>
+                <p>
+                    DeadLogs is a tool? Engine? Framework? Templating system?
+                    It's whatever one might call it. It's a tool for creating
+                    simple sites and/or blogs. Of course, anyone who has the
+                    programming knowledge to do so can customize and edit the
+                    inner workings to meet their needs.
+                </p>
 
-                </div>
-                <hr>
-                <footer id="footer"></footer>
-            </div>
+                <img width="100" height="100" class="centered" alt="DeadLogs symbol" src="assets/images/favicon.png">
+                
+                <p>
+                    DeadLogs is distributed under the
+                    <a href="https://oql.avris.it/license?c=RodFireProductions|https://deadinsideartist.art/" target="_blank">Opinionated Queer License</a>.
+                </p>
+
+                <p>
+                    If you have any questions or concerns, contact me here:
+                    <code>deadlogs [at] deadinsideartist [dot] art</code>.
+                </p>
+
+
+
+            </main>
+            <hr id="seperator">
+            <footer id="footer"></footer>
         </div>
         <!-- Let's link our javascript-->
-        <script src="./script.js" charset="utf-8"></script>
-        <script src="./scripts/post.js" charset="utf-8"></script>
+        <script src="./deadlogs.js" charset="utf-8"></script>
+        <script src="./scripts/posts.js" charset="utf-8"></script>
         <script src="./scripts/console.js" charset="utf-8"></script>
     </body>
 </html>

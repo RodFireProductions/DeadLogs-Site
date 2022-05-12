@@ -5,39 +5,56 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <link rel="stylesheet" href="../assets/style/main.css">
         <link rel="icon" href="../assets/images/favicon.png" type="image/png">
-
-        <meta name="author" content="Rodrick 'RodFireProductions'" />
-        <meta name="description" content="A tool for making static blogs using html, css, and vanilla javascript. Minimum html markup and javascript array and dictionary knowledge is needed to begin working with DeadJournals.">
         <title></title>
+        <link rel="shortcut icon" href="../assets/images/favicon.png" />
+
+		<meta name="author" content="Rodrick 'RodFireProductions'" />
+
+		<!-- url -->
+		<link rel="canonical" href="https://deadlogs.deadinsideartist.art/">
+		<meta property="og:url" content="https://deadlogs.deadinsideartist.art/">
+		<meta name="twitter:url" content="https://deadlogs.deadinsideartist.art/">
+
+		<!-- description -->
+		<meta name="description" content="A tool for making static blogs and sites.">
+		<meta property="og:description"	content="A tool for making static blogs and sites.">
+		<meta name="twitter:description" content="A tool for making static blogs and sites.">
+
+		<!-- image -->
+		<meta property="og:image"  content="../assets/images/press1.png">
+		<meta name="twitter:image" content="../assets/images/press1.png">
+
+		<!-- misc -->
+		<meta name="twitter:site" content="@rodfire8181">
+		<meta name="twitter:creator" content="@rodfire8181">
+		<meta property="twitter:card" content="summary_large_image">
+
+		<meta property="og:type" content="website">
     </head>
     <body>
         <div id="container">
-            <div class="main_content">
-                <div class="header">
-                    <nav id="nav"></nav>
-                    <hr>
-                    <div class="heading">
-                        <h2 id="blogTitle"></h2>
-                    </div>
-
-                </div>
+            <header>
+                <nav id="nav"></nav>
+                <h1 id="postTitle"></h1>
+                <div id="postDate"></div>
                 <hr>
-                <div class="postcontent">
-                    <!-- Enter content here  -->
+            </header>
+            <main>
+                <!------------------------------------------------>
+                <!-- This is where you place your post content! -->
+                <!--
+                    I recommend not deleting the `template.html` file,
+                    but instead to copy from it.
+                -->
 
-
-
-
-
-
-                </div>
-                <hr>
-                <footer id="footer"></footer>
-            </div>
+            </main>
+            <hr id="seperator">
+            <div id="changePost"></div>
+            <footer id="footer"></footer>
         </div>
         <!-- Let's link our javascript-->
-        <script src="../script.js" charset="utf-8"></script>
-        <script src="../scripts/post.js" charset="utf-8"></script>
+        <script src="../deadlogs.js" charset="utf-8"></script>
+        <script src="../scripts/posts.js" charset="utf-8"></script>
         <script src="../scripts/console.js" charset="utf-8"></script>
     </body>
 </html>

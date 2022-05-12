@@ -1,0 +1,94 @@
+<!doctype html>
+<html>
+    <head>
+        <meta charset=utf-8>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="../assets/style/main.css">
+        <link rel="icon" href="../assets/images/favicon.png" type="image/png">
+        <title></title>
+        <link rel="shortcut icon" href="../assets/images/favicon.png" />
+
+		<meta name="author" content="Rodrick 'RodFireProductions'" />
+
+		<!-- url -->
+		<link rel="canonical" href="https://deadlogs.deadinsideartist.art/">
+		<meta property="og:url" content="https://deadlogs.deadinsideartist.art/">
+		<meta name="twitter:url" content="https://deadlogs.deadinsideartist.art/">
+
+		<!-- description -->
+		<meta name="description" content="A tool for making static blogs and sites.">
+		<meta property="og:description"	content="A tool for making static blogs and sites.">
+		<meta name="twitter:description" content="A tool for making static blogs and sites.">
+
+		<!-- image -->
+		<meta property="og:image"  content="../assets/images/press1.png">
+		<meta name="twitter:image" content="../assets/images/press1.png">
+
+		<!-- misc -->
+		<meta name="twitter:site" content="@rodfire8181">
+		<meta name="twitter:creator" content="@rodfire8181">
+		<meta property="twitter:card" content="summary_large_image">
+
+		<meta property="og:type" content="website">
+
+        <!-- Syntax Highlighter -->
+        <script src="../scripts/highlight/highlight.min.js" charset="utf-8"></script>
+        <script>hljs.highlightAll();</script>
+    </head>
+    <body>
+        <div id="container">
+            <header>
+                <nav id="nav"></nav>
+                <h1 id="postTitle"></h1>
+                <div id="postDate"></div>
+                <hr>
+            </header>
+            <main>
+                <!------------------------------------------------>
+                <!-- This is where you place your post content! -->
+                <!--
+                    I recommend not deleting the `template.html` file,
+                    but instead to copy from it.
+                -->
+
+<pre><code>/* Main CSS */
+@import "default.css";
+
+/*  You can import your own css files if you'd like here and
+    then it'll be automatically used in your site.
+*/</code></pre>
+
+<pre><code>:root {
+    --font-size     : 1.1em; /* Main text size */
+    --title-size    : 36px; /* Page title font */
+
+    --text-color    : #eee; /* Main text color */
+    --accent-color  : #97e89c; /* The color used for links */
+    --title-color   : #dcdede; /* Used for titles */
+
+    --bg-color      : #666; /* Background color */
+    --back-color    : #111111DD; /* Background color of main area */
+    --bg-image      : url("../images/background.webp"); /* This is the image that's repeated in the background */
+
+    --font-main     : sans-serif; /* The font used for almost everything */
+    --font-title    : sans-serif; /* The font used for page titles */
+    --text-indent   : 0em; /* The width of paragraph indents. Just put `0px` if you don't want any. */
+
+    --hr-style      : dotted; /* Horizontal line style */
+}</code></pre>
+
+<!--
+<pre><code></code></pre>
+-->
+
+            </main>
+            <hr id="seperator">
+            <div id="changePost"></div>
+            <footer id="footer"></footer>
+        </div>
+        <!-- Let's link our javascript-->
+        <script src="../deadlogs.js" charset="utf-8"></script>
+        <script src="../scripts/posts.js" charset="utf-8"></script>
+        <script src="../scripts/console.js" charset="utf-8"></script>
+    </body>
+</html>
