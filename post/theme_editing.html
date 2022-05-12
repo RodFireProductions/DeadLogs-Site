@@ -30,6 +30,10 @@
 		<meta property="twitter:card" content="summary_large_image">
 
 		<meta property="og:type" content="website">
+
+        <!-- Syntax Highlighter -->
+        <script src="../scripts/highlight/highlight.min.js" charset="utf-8"></script>
+        <script>hljs.highlightAll();</script>
     </head>
     <body>
         <div id="container">
@@ -47,8 +51,36 @@
                     but instead to copy from it.
                 -->
 
+<pre><code>/* Main CSS */
+@import "default.css";
 
-                <!-- D-starting html comments thing  -->
+/*  You can import your own css files if you'd like here and
+    then it'll be automatically used in your site.
+*/</code></pre>
+
+<pre><code>:root {
+    --font-size     : 1.1em; /* Main text size */
+    --title-size    : 36px; /* Page title font */
+
+    --text-color    : #eee; /* Main text color */
+    --accent-color  : #97e89c; /* The color used for links */
+    --title-color   : #dcdede; /* Used for titles */
+
+    --bg-color      : #666; /* Background color */
+    --back-color    : #111111DD; /* Background color of main area */
+    --bg-image      : url("../images/background.webp"); /* This is the image that's repeated in the background */
+
+    --font-main     : sans-serif; /* The font used for almost everything */
+    --font-title    : sans-serif; /* The font used for page titles */
+    --text-indent   : 0em; /* The width of paragraph indents. Just put `0px` if you don't want any. */
+
+    --hr-style      : dotted; /* Horizontal line style */
+}</code></pre>
+
+<!--
+<pre><code></code></pre>
+-->
+
             </main>
             <hr id="seperator">
             <div id="changePost"></div>

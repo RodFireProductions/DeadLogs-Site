@@ -110,7 +110,7 @@ if (archiveList != null) {
     a = postArchive.reverse()
     let w;
     for (w = 0; w < a.length; w++) {
-      archiveList.innerHTML += '<a class="changePost" href="'+ folder + "/" + a[w][2] +'">'+ a[w][1]+ " ◉ " +a[w][0] +'</a><br>';
+      archiveList.innerHTML += '<a class="changePost" href="'+ folder + "/" + a[w][2] +'">'+ a[w][0]+ " ◉ " +a[w][1] +'</a><br>';
     }
 }
 
@@ -122,11 +122,11 @@ if (recent != null) {
     let r;
     if (a.length >= 3) {
         for (r = 0; r < 3; r++) {
-            recent.innerHTML += '<a class="changePost" href="'+ folder + '/' + a[r][2] +'">'+ a[r][1]+ " ◉ " +a[r][0] +'</a><br>';
+            recent.innerHTML += '<a class="changePost" href="'+ folder + '/' + a[r][2] +'">'+ a[r][0]+ " ◉ " +a[r][1] +'</a><br>';
         }
     } else {
         for (r = 0; r < a.length; r++) {
-            recent.innerHTML += '<a class="changePost" href="'+ folder + '/' + a[r][2] +'">'+ a[r][1]+ " ◉ " +a[r][0] +'</a><br>';
+            recent.innerHTML += '<a class="changePost" href="'+ folder + '/' + a[r][2] +'">'+ a[r][0]+ " ◉ " +a[r][1] +'</a><br>';
         }
     }
     recent.innerHTML += '<a class="changePost" href="'+ path + middleLink[1]+'">'+ " See all "+'</a><br>';

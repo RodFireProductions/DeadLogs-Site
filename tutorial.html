@@ -34,10 +34,6 @@
         <!-- Syntax Highlighter -->
         <script src="scripts/highlight/highlight.min.js" charset="utf-8"></script>
         <script>hljs.highlightAll();</script>
-
-        <!-- Additional CSS -->
-        <style>
-        </style>
     </head>
     <body>
         <div id="container">
@@ -52,6 +48,10 @@
                     Welcome to the DeadLogs' starting tutorial! Though the files themselves
                     are filled with comments, it still felt necessary
                     to give at least a little outside guidance.
+                </p>
+
+                <p>
+                    You can head to <a href="#more">the bottom</a> for other tutorials and information.
                 </p>
 
                 <h2>Let's begin</h2>
@@ -246,7 +246,11 @@ let footer = `
                 <section>
                     <h3>Add content</h3>
 
-
+                    <p>
+                        In each file, there's an area where it states to type your
+                        content at. Make sure you keep all the main content of your
+                        pages within the <code>&#60;main&#62;</code> tags.
+                    </p>
                     <p>
                         This is what theses sections might look like:
                     </p>
@@ -265,6 +269,15 @@ let footer = `
 
 &#60;/main&#62;</code></pre>
 
+                    <p>
+                        In the top level of you files, where your <code>index.html</code>
+                        file is, you will have to type the header and title into while you
+                        don't have to for your posts.
+                    </p>
+
+<pre><code>&#60;title&#62;Your page title&#60;/title&#62;</code></pre>
+<pre><code>&#60;h1&#62;Your page title&#60;/h1&#62;</code></pre>
+
 <!--
 <pre><code></code></pre>
 -->
@@ -272,10 +285,10 @@ let footer = `
                 </section>
                 <div class="right">◉</div>
 
-                <!--
-                <h2>More Info:</h2>
+
+                <h2 id="more">More Info:</h2>
                 <div id="archivePage" class="archive"></div>
-                -->
+
 
             </main>
             <hr id="seperator">

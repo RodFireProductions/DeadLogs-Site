@@ -32,7 +32,7 @@ let navi = [
 ];
 
 // The link that holds the archive list.
-let middleLink = ['tutorials', '/tutorial.html'];
+let middleLink = ['tutorials', '/tutorial.html#more'];
 let folder = 'post';
 
 // This is the text that appears in the footer of your site. Feel free to customize it.
@@ -60,7 +60,9 @@ let footer = `
 let postArchive = [
     //['Title', 'Date', 'Location']
     ['My Recommendations', 'Last Updated: May 11, 2022', 'recommendations.html'],
-    ['FAQ', 'Last Updated: May 11, 2022', 'faq.html']
+    ['FAQ', 'Last Updated: May 11, 2022', 'faq.html'],
+    ['Editing Your Theme', 'Last Updated: May 11, 2022', 'theme_editing.html'],
+    ['Hosting & Domains', 'Last Updated: May 11, 2022', 'hosting.html']
 ];
 
 // --------------------------- # # # # #
