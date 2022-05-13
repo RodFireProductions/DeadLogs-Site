@@ -15,7 +15,7 @@
 
 let siteName = '◉ DeadLogs ◉';
 let lang = 'en'; // The language of your site. Example, en = english, fr = français (french), etc.
-let siteUrl = 'https://deadlogs.deadinsideartist.art'; // You can just put the url of your site here, whether that be a subdomain or custom.
+let siteUrl = 'https://deadlogs.shroom.ink'; // You can just put the url of your site here, whether that be a subdomain or custom.
 
 // Put down your name and website/social media
 let author = {
@@ -25,7 +25,7 @@ let author = {
 
 // This is where you define the pages that'll be in your navigation bar throughout the site.
 let navi = [
-    ['home','/index.html'],
+    ['home','/'],
     ['about','/about.html'],
     ['get started','/tutorial.html'],
     ['examples', '/examples.html']
@@ -59,10 +59,10 @@ let footer = `
 
 let postArchive = [
     //['Title', 'Date', 'Location']
-    ['My Recommendations', 'Last Updated: May 11, 2022', 'recommendations.html'],
-    ['FAQ', 'Last Updated: May 11, 2022', 'faq.html'],
-    ['Editing Your Theme', 'Last Updated: May 11, 2022', 'theme_editing.html'],
-    ['Hosting & Domains', 'Last Updated: May 11, 2022', 'hosting.html']
+    ['My Recommendations', 'Last Updated: May 13, 2022', 'recommendations.html'],
+    ['FAQ', 'Last Updated: May 13, 2022', 'faq.html'],
+    ['Editing Your Theme', 'Last Updated: May 13, 2022', 'theme_editing.html'],
+    ['Hosting & Domains', 'Last Updated: May 12, 2022', 'hosting.html']
 ];
 
 // --------------------------- # # # # #

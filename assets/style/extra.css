@@ -20,6 +20,14 @@ code {
     padding: 3px 5px;
 }
 
+summary:hover { cursor: pointer; }
+details {
+    padding: 10px 5px;
+}
+
+.outlined { border: double var(--back-color); }
+.outlined:hover { border: double var(--accent-color); }
+
 /**/
 .scared {
     animation: an_shake .2s linear infinite;
