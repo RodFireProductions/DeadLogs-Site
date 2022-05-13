@@ -44,12 +44,30 @@
                 <hr>
             </header>
             <main>
-                <!------------------------------------------------>
-                <!-- This is where you place your post content! -->
-                <!--
-                    I recommend not deleting the `template.html` file,
-                    but instead to copy from it.
-                -->
+
+                <p>
+                    So you want to edit your default theme? How scandalous.
+                </p>
+
+                <p>
+                    Anyhow, you can do this by editing the CSS files in the <code>style</code>
+                    folder.
+                </p>
+                <div class="right" id="main.css">◉</div>
+
+                <h2><code>main.css</code></h2>
+
+                <p>
+                    The <code>main.css</code> file is the file that is link
+                    in every page of your site. Here, you can link other CSS
+                    files that you may create or download.
+                </p>
+
+                <p>
+                    By default, the file <code>default.css</code> is linked. That's the file
+                    that holds not only your theme, but the basic structure of your site. You
+                    can <a href="#default.css">edit pieces of this file</a> though.
+                </p>
 
 <pre><code>/* Main CSS */
 @import "default.css";
@@ -57,6 +75,21 @@
 /*  You can import your own css files if you'd like here and
     then it'll be automatically used in your site.
 */</code></pre>
+
+                <div class="right" id="default.css">◉</div>
+                <h2><code>default.css</code></h2>
+
+                <p>
+                    At the top of the <code>default.css</code> file is a section of
+                    variables. These variables is what decides the basics of your site's
+                    theme. All of the variables are described via comments so you know
+                    which is which.
+                </p>
+
+                <p>
+                    Here's an example of what it'll look like. This is taken from the Stars
+                    theme, so it may not have the same values as yours.
+                </p>
 
 <pre><code>:root {
     --font-size     : 1.1em; /* Main text size */
@@ -80,8 +113,28 @@
 <!--
 <pre><code></code></pre>
 -->
+            <div class="right">◉</div>
 
             </main>
+            <!-- Comments -->
+            <hr>
+            <div class="giscus">
+                <script src="https://giscus.app/client.js"
+                    data-repo="RodFireProductions/DeadLogs-Site"
+                    data-repo-id="R_kgDOGRwGlw"
+                    data-category="—✨💬✨—"
+                    data-category-id="DIC_kwDOGRwGl84CPEVk"
+                    data-mapping="url"
+                    data-reactions-enabled="1"
+                    data-emit-metadata="0"
+                    data-input-position="top"
+                    data-theme="dark_high_contrast"
+                    data-lang="en"
+                    data-loading="lazy"
+                    crossorigin="anonymous"
+                    async>
+                </script>
+            </div>
             <hr id="seperator">
             <div id="changePost"></div>
             <footer id="footer"></footer>

@@ -40,47 +40,171 @@
                 <hr>
             </header>
             <main>
-                <!------------------------------------------------>
-                <!-- This is where you place your post content! -->
-                <!--
-                    I recommend not deleting the `template.html` file,
-                    but instead to copy from it.
-                -->
+                <p>
+                    <b><i>Disclaimer: These are only the services I've used before.
+                    There are a lot more services out there.</i></b>
+                </p>
+
+                <p>
+                    So you wanna host your site online? And you may want a custom domain? You <i>scoundrel!</i>
+                    Well, most likely you're going to want to edit your site locally, meaning you're going
+                    to want to use <a href="https://github.com/" target="_blank">GitHub</a> or
+                    <a href="https://about.gitlab.com/" target="_blank">GitLab</a> (there are others ones as well).
+                    I'm not gonna tell you how to do that part. There are a lot of tutorials online.
+                </p>
 
                 <ul>
+                    <li><a href="#hosting">Hosting Services</a></li>
+                    <li><a href="#domains">Domain Registrars</a></li>
+                    <li><a href="#beware">Bewares</a></li>
+                </ul>
+                <div class="right" id="hosting">◉</div>
+                <h2>Hosting Services</h2>
+                <ul>
+                    <!-- Netlify -->
                     <li><a target="_blank" href="https://www.netlify.com/">Netlify</a></li>
                     <ul>
-                        <li>Subdomain: *.netlify.app</li>
-                        <li>Can use you custom domain for free.</li>
-                        <li>Can host unlimited sites for free.</li>
-                        <li>Storage: 1 GB</li>
-                        <li>Bandwidth: 100 GB</li>
+                        <li>Free subdomain: *.netlify.app</li>
+                        <li>Can use your custom domain(s) for free.</li>
+                        <li>Can host multiple sites for free.</li>
+                        <li>Hosts different frameworks.</li>
+                        <li>Connects to git.</li>
                     </ul>
+
                     <br>
-                    <li><a target="_blank" href="https://neocities.org/">Neocities</a></li>
+                    <!-- Vercel -->
+                    <li><a target="_blank" href="https://vercel.com/">Vercel</a></li>
                     <ul>
-                        <li>Subdomain: *.neocities.org</li>
-                        <li>You have to be a monthly supporter to use your custom domain.</li>
-                        <li>Can host one site for free.</li>
-                        <li>Storage: 1 GB</li>
-                        <li>Bandwidth: 100 GB</li>
+                        <li>Free subdomain: *.vercel.app</li>
+                        <li>Can use your custom domain(s) for free.</li>
+                        <li>Can host multiple sites for free.</li>
+                        <li>Hosts different frameworks.</li>
+                        <li>Connects to git.</li>
                     </ul>
-                    If you choose Neocities, I'd find it nice if you'd add the tag
-                    <code>deadjournals</code> to your site.
-                    <br><br>
+
+                    <br>
+                    <!-- GitHub Pages -->
                     <li><a target="_blank" href="https://pages.github.com/">GitHub Pages</a></li>
                     <ul>
-                        <li>Subdomain: *.github.io</li>
-                        <li>Can use your custom domain for free.</li>
-                        <li>Can host unlimited sites for free.</li>
-                        <li>Storage: 1 GB</li>
-                        <li>Bandwidth: 100 GB</li>
+                        <li>Free subdomain: *.github.io</li>
+                        <li>Can use your custom domain(s) for free.</li>
+                        <li>Can host multiple sites for free.</li>
+                        <li>Hosts static and <a href="https://jekyllrb.com/" target="_blank">Jekyll</a> sites.</li>
+                        <li>Connects to git (of course).</li>
                     </ul>
+                    If you choose GitHub, it'd be nice if you added the <code>deadlogs</code> tag
+                    to your repository.
+
+                    <br><br>
+                    <!-- Neocities -->
+                    <li><a target="_blank" href="https://neocities.org/">Neocities</a></li>
+                    <ul>
+                        <li>Free subdomain: *.neocities.org</li>
+                        <li>You have to be a monthly supporter to use your custom domain.</li>
+                        <li>Can host one site for free.</li>
+                        <li>Hosts static sites only.</li>
+                        <li>Doesn't connect to git.
+                            You can't update your site locally unless you're a supporter.
+                            (Makes me want to punch it, but you may not mind.)
+                        </li>
+                    </ul>
+                    If you choose Neocities, it'd be nice if you added the <code>deadlogs</code> tag
+                    to your site.
 
                     <!-- <li><a target="_blank" href=""></a></li> -->
                 </ul>
+                <div class="right" id="domains">◉</div>
 
+                <h2>Domain Registrars</h2>
+
+                <ul>
+                    <li><a target="_blank" href="https://domains.google.com/">Google Domains</a></li>
+                    Pros:
+                    <ul>
+                        <li>Reliable</li>
+                        <li>Free email forwarding</li>
+                    </ul>
+                    Cons:
+                    <ul>
+                        <li>It's Google</li>
+                    </ul>
+                    <br>
+
+                    <li><a target="_blank" href="https://porkbun.com/">Porkbun</a></li>
+                    Pros:
+                    <ul>
+                        <li>Cheaper than other options</li>
+                        <li>Reliable</li>
+                        <li>Free email forwarding</li>
+                    </ul>
+                    Cons:
+                    <ul>
+                        <li>Give me some time. I just started using them.</li>
+                    </ul>
+                    <br>
+
+                    <li><a target="_blank" href="https://www.freenom.com/">Freenom</a></li>
+                    Pros:
+                    <ul>
+                        <li>Can use a custom domain for free.</li>
+                    </ul>
+                    Cons:
+                    <ul>
+                        <li><a href="https://hostingrevelations.com/is-freenom-safe/" target="_blank">A lot.</a></li>
+                        <i>TL;DR:</i>
+                        <ul>
+                            <li>Unsafe and unreliable</li>
+                            <li>Your domains can be taken away at anytime for any reason. (free plan)</li>
+                            <li>They had their ICANN registrar accreditation suspended in 2015 for cybersquatting.</li>
+                            <li>Bad customer service</li>
+                        </ul>
+                    </ul>
+                    Don't use this one unless you're just needing a temporary domain for testing or something.
+                </ul>
+
+                <div class="right" id="beware">◉</div>
+
+                <h3>Also... Don't use GoDaddy!</h3>
+                <p>
+                    Okay, so I have not personally used GoDaddy before, but all I hear about
+                    them is bad story after bad story after bad story of people having issues with GoDaddy.
+                    But don't take my word for it, take
+                    <a href="https://reddit.com/r/webhosting/search?q=godaddy&restrict_sr=on" target="_blank">theirs</a>
+                    (<a target="_blank" href="https://libreddit.pussthecat.org/r/webhosting/search?q=godaddy&restrict_sr=on">alternative frontend link</a>).
+                </p>
+
+                <p>
+                    Don't use it for your domain or hosting. Just don't do it. There are so many better
+                    options.
+                </p>
+
+                <h3>And... Avoid EIG / Newfold Digital <a target="_blank" href="https://en.wikipedia.org/wiki/Newfold_Digital#Subsidiary_brands">brands</a>!</h3>
+
+                <p>
+                     That includes HostGator, BlueHost, and Domain.com. Just don't do it. There are better options.
+                </p>
+
+                <div class="right">◉</div>
             </main>
+            <!-- Comments -->
+            <hr>
+            <div class="giscus">
+                <script src="https://giscus.app/client.js"
+                    data-repo="RodFireProductions/DeadLogs-Site"
+                    data-repo-id="R_kgDOGRwGlw"
+                    data-category="—✨💬✨—"
+                    data-category-id="DIC_kwDOGRwGl84CPEVk"
+                    data-mapping="url"
+                    data-reactions-enabled="1"
+                    data-emit-metadata="0"
+                    data-input-position="top"
+                    data-theme="dark_high_contrast"
+                    data-lang="en"
+                    data-loading="lazy"
+                    crossorigin="anonymous"
+                    async>
+                </script>
+            </div>
             <hr id="seperator">
             <div id="changePost"></div>
             <footer id="footer"></footer>
