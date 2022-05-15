@@ -73,3 +73,7 @@
 form#font {
     font-size: 14px;
 }
+
+#fonttoggle {
+    margin-top: 10px;
+}
