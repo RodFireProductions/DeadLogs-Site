@@ -113,7 +113,7 @@ h2,h3,h4,h5,h6 { line-height: 1.0; }
 
 @media only screen and (max-width: 625px) {
 	#container {
-        width: 90% !important;
+        width: calc(90% - 25px) !important;
         margin: 0px auto !important;
         margin-top: 25px !important;
     }
