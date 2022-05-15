@@ -5,6 +5,7 @@
 */
 
 /* Main CSS */
+@import "fonts.css";
 @import "default.css";
 @import "extra.css";
 @import "../../scripts/highlight/styles/decaf.min.css"
