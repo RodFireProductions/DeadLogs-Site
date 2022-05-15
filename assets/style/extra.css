@@ -15,7 +15,7 @@ ul { list-style-type: "◉ "; }
 
 code {
     font-size: var(--font-size);
-    font-family: monospace;
+    font-family: var(--font-mono);
     background: #000000;
     padding: 3px 5px;
 }
