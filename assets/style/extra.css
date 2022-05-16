@@ -25,6 +25,21 @@ details {
     padding: 10px 5px;
 }
 
+table {
+  border: 1px solid var(--accent-color);
+  /* border-bottom: none; */
+  margin: auto;
+}
+th, td {
+  border: 1px solid var(--accent-color);
+  border-top: none;
+  border-left: none;
+  border-bottom: none;
+  margin: auto;
+}
+th { background: var(--accent-color); color: var(--back-color); font-weight: bold; }
+td li { list-style-type: "◉ "; }
+
 .outlined { border: double var(--back-color); }
 .outlined:hover { border: double var(--accent-color); }
 

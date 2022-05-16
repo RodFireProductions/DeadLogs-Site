@@ -77,3 +77,4 @@ form#font {
 #fonttoggle {
     margin-top: 10px;
 }
+fieldset { border: none; /*double 2px var(--accent-color);*/ }
