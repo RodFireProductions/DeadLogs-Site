@@ -74,7 +74,13 @@ form#font {
     font-size: 14px;
 }
 
+#font legend {
+    width: auto;
+    margin-left: auto;
+    margin-right: auto;
+}
+
 #fonttoggle {
     margin-top: 10px;
 }
-fieldset { border: none; /*double 2px var(--accent-color);*/ }
+fieldset { border: none; /*double 2px var(--accent-color);*/  }
