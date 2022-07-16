@@ -82,5 +82,6 @@ form#font {
 
 #fonttoggle {
     margin-top: 10px;
+    line-height: 1.1;
 }
 fieldset { border: none; /*double 2px var(--accent-color);*/  }
