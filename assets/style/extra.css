@@ -11,7 +11,7 @@ html { scrollbar-color: #666 #000; }
 
 
 ol { list-style-type: upper-roman; }
-ul { list-style-type: "◉ "; }
+ul { list-style-type: "—"; } /* ◉ */
 
 code {
     font-size: var(--font-size);
