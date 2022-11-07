@@ -39,9 +39,11 @@ let folder = 'post';
 let footer = `
     Owned & Written by <a href="${author.url}" target="_blank">${author.name}</a>
     <br>
-    <a href="https://rodfireproductions.itch.io/deadlogs" target="_blank">Itch</a>
+    <a href="https://rodfireproductions.itch.io/deadlogs" target="_blank">Itch.io</a>
     ◉
     <a href="https://github.com/RodFireProductions/DeadLogs" target="_blank">GitHub</a>
+    ◉
+    <a target="_blank" href="https://forms.gle/sVLF2jEgj8zR4zN28">Form</a>
 `;
 
 // --------------------------- # # # # #
