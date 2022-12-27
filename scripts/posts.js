@@ -61,8 +61,9 @@ let foot = `
     <div>
         ${footer}
     </div>
-    <div>
-        Built using <a target="_blank" href="https://deadlogs.deadinsideartist.art">DeadLogs</a>
+    <div class="button">
+        <p>Built using</p>
+        <a title="A static blog/site template." target="_blank" href="https://deadlogs.shroom.ink"><img src="https://deadlogs.shroom.ink/assets/images/DeadLogs.gif"></a>
     </div>
 `;
 document.getElementById('footer').innerHTML = foot;
