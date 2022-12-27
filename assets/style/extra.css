@@ -43,6 +43,38 @@ td li { list-style-type: "◉ "; }
 .outlined { border: double var(--back-color); }
 .outlined:hover { border: double var(--accent-color); }
 
+.buttons {
+    display: grid;
+    grid-auto-flow: column;
+    grid-template-columns: auto auto auto auto auto auto;
+
+    align-items: center;
+    justify-content: center;
+
+    grid-gap: 5px;
+}
+.button {
+    display: grid;
+    grid-auto-flow: column;
+    grid-template-columns: auto;
+
+    align-items: center;
+    justify-content: center;
+    grid-gap: 5px;
+}
+.button img, .buttons img {
+    image-rendering: pixelated;
+    image-rendering: -moz-crisp-edges;
+    image-rendering: crisp-edges;
+}
+.buttonBig img {
+    width: calc(81px * 1.5);
+}
+@media only screen and (max-width: 800px) {
+  .buttons { grid-template-columns: auto auto auto; }
+}
+
+
 /**/
 .scared {
     animation: an_shake .2s linear infinite;
