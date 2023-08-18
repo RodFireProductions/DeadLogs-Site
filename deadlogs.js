@@ -64,7 +64,7 @@ let postArchive = [
     ['My Recommendations', 'Last Updated: Sept 9th, 2022', 'recommendations.html'],
     ['FAQ', 'Last Updated: May 13, 2022', 'faq.html'],
     ['Editing Your Theme', 'Last Updated: May 13, 2022', 'theme_editing.html'],
-    ['Hosting & Domains', 'Last Updated: May 12, 2022', 'hosting.html']
+    ['Hosting & Domains', 'Last Updated: Aug 17, 2023', 'hosting.html']
 ];
 
 // --------------------------- # # # # #
