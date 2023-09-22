@@ -25,6 +25,8 @@
     --text-indent   : 0em; /* The width of paragraph indents. Just put `0px` if you don't want any. */
 
     --hr-style      : dotted; /* Horizontal line style */
+	
+	--font-size		: calc(1rem + (1vw / 5));
 }
 
 /* */
@@ -40,6 +42,8 @@ body {
 
     line-height: 1.4;
     margin: 0px;
+	
+	font-size: var(--font-size);
 }
 
 mark, ::selection { background: #dedede; color: var(--back-color); font-family: var(--font-main); }
@@ -116,6 +120,11 @@ h2,h3,h4,h5,h6 { line-height: 1.0; }
         width: calc(90% - 25px) !important;
         margin: 0px auto !important;
         margin-top: 25px !important;
+    }
+}
+@media only screen and (min-width: 1500px) {
+    #container {
+        width: 1000px;
     }
 }
 
